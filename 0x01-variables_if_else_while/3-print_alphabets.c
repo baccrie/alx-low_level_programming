@@ -6,13 +6,13 @@
  */
 int main(void)
 {
-char lowercase; /* Declaring a variable*/
+char lowercase;
 
 for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 {
 putchar(lowercase);
 }
-char uppercase; /* Declaring a variable*/
+char uppercase;
 
 for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)
 {
