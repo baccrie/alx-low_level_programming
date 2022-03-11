@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-        char alphabet; /*declaring the variable for the loop statement*/
+char alphabet; /*declaring variable*/
 
-        for (alphabet = 'z'; alphabet >='a'; alphabet--)
-        {
-                putchar(alphabet);
-        }
-        putchar('\n');
-        return (0);
+for (alphabet = 'z'; alphabet >='a'; alphabet--)
+{
+ putchar(alphabet);
+}
+putchar('\n');
+return (0);
 }
