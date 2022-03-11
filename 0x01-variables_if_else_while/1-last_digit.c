@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * Doing the hard things in alx
+ * main - Entry - point
  * Task 1. The last digit
  *
  * Return: Always  0 (Success)
