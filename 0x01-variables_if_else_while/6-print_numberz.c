@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-int numb;
-numb = 0;
-while (numb < 10)
+int numb = 48;
+
+while (numb <= 57)
 {
-putchar(int numb);
+putchar(numb);
 ++numb;
 }
 putchar('\n');
