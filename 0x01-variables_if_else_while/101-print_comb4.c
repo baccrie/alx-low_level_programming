@@ -28,19 +28,21 @@ putchar (right);
 /*break program if the condition is true (if is 789=+)*/
 if ((left == 55) && (center == left + 1) && (right == center + 1))
 {
-break;
+break; /*terminate the program*/
 }
 
-putchar(',');
-putchar (' ');
+putchar(','); /*print (,)*/
+putchar (' '); /*prirint a space*/
 
-}
+} /*end for #3*/
 
-}
+} /*end for #2*/
 
-}
+} /*end for #1*/
 
-putchar('\n');
+putchar('\n'); /*new line*/
 
 return (0);
+
+}
 
