@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Task 3. alphABET
+ * Task 6. alphABET
  * Return: Always 0 (Success)
  */
 int main(void)
