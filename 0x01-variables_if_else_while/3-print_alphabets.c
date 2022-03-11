@@ -2,7 +2,7 @@
  * main - Entry - point
  * Task 3. alphABET
  * This c script is written by baccrie © 20
- * 22 no 
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -17,7 +17,6 @@ int main(void)
 ble for the upper case alphabets*/
                                                     for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)                                     {                                                   putchar(uppercase);
         }
-
         putchar('\n');
         return (0);
 }
