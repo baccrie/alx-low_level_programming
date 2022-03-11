@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char alphabet;
+	char alphabet; /*declaring the variable for the loop statement*/
 
 	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
