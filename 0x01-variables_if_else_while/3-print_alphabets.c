@@ -9,14 +9,15 @@ int main(void)
 {
         char lowercase; /* Declaring a variable for the lower case alphabets*/
 
-        for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
-        {
+for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
+{
                 putchar(lowercase);
-	}
+}
 	char uppercase; /* Declaring a varia
 ble for the upper case alphabets*/
-                                                    for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)                                     {                                                   putchar(uppercase);
-        }
-        putchar('\n');
-        return (0);
+                                        for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)
+{                                                   putchar(uppercase);
+}
+putchar('\n');
+return (0);
 }
