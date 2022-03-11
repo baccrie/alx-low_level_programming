@@ -11,8 +11,11 @@ int numb = 48;
 while (numb <= 57)
 {
 putchar(numb);
+if (numb <= 56)
+{
 putchar(',');
 putchar(' ');
+}
 ++numb;
 }
 putchar('\n');
