@@ -1,6 +1,8 @@
 #include <stdio.h>
 int main(void)
 {
-	int n = 344455;
-	printf("%s", n[-1]);
+char h = 87;
+putchar(h);
+return (0);
+putchar('\n');
 }
