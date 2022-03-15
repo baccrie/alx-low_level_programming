@@ -4,6 +4,7 @@
  * The main.h is an header file that has th
  * the prototyping definition of the
  * _putchar function
+ * copyright © baccrie 2022
  * Return: Always 0 (Success)
  */
 int main(void)
