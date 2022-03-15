@@ -7,7 +7,7 @@
  * copyright © baccrie 2022
  * Return: Always 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
 /* defining the alphabet vafiable */
 char alphabets;
