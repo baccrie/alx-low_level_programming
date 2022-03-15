@@ -1,19 +1,22 @@
 #include "main.h"
+
 /**
- * print_alphabet_x10 - print 10 times 
- * Holberton school of Engr
- * copyright © baccrie 2022
- * Return: Always 0 (Success)                */
+ * print_alphabet_x10 - print alphabet
+ * Copyright baccrie © 2022
+ * All right reserved
+ * Return: always 0
+ */
 void print_alphabet_x10(void)
 {
-int cycle = 0;
-int alphabets;
+int alphabet; /*Declaring variable*/
+int cycle;
 
-while (cycle < 10)
+cycle = 0;
+while (cycle < 10) /*While loop */
 {
-for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
+for (alphabet = 'a' ; alphabet <= 'z'; alphabet++) /*for loop*/
 {
-_putchar(alphabets);
+_putchar(alphabet);
 }
 cycle++;
 _putchar('\n');
