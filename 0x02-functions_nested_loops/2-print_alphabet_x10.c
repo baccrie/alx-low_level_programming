@@ -8,10 +8,10 @@
  * Return: Always 0 (Success)                */
 void print_alphabet_x10(void)
 {
-int cycle = 0; /* variable to do x10 */
+int cycle = 0;
 int alphabets;
 
-while (cycle < 10)/*prints a-z*/
+while (cycle < 10)
 {
 for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
 {
