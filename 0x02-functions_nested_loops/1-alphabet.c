@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - print alphabet
+ * lowercase
  * The main.h is an header file that has th
  * the prototyping definition of the
  * _putchar function
