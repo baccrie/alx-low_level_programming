@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* main - tests function
+* main - main
 * Return: 0
 */
 
