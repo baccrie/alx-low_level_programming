@@ -2,7 +2,6 @@
 /**
 * main - main
 * Return: 0
-* copyright baccrie © 2022
 */
 
 int main(void)
