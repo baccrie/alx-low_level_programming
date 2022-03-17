@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isdigit - check if c is letter
+ * _isdigit - check if c is digit
  * @c: print int
  * copyright © baccrie 2022
  * Return: Always 0
