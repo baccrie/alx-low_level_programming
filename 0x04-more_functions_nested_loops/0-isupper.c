@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _isupper - evalue if letter is uppercase
- * @c: print int
+ * @c:
  * Return: Always 0.
  */
 
