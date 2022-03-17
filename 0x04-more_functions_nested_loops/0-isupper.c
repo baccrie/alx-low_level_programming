@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _isupper - baccrie
- * @ print int
+ * _isupper - check if int c is uppercase
+ * copyright 2022 © baccrie
  * Return: Always 0.
  */
 
