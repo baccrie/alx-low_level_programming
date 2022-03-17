@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _isupper - baccrie
- * check for uppercase
+ * _isupper - evalue if letter is uppercase
+ * @c: print int
  * Return: Always 0.
  */
 
