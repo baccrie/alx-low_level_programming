@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - check the code.
+ * _isupper - baccrie
  *
  * Return: Always 0
  */
