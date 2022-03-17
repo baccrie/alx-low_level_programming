@@ -26,3 +26,4 @@ int main(void)
 	printf("%li\n", quotient);
 
 	return (0);
+}
