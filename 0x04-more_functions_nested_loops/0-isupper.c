@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _isupper - baccrie
- *
+ * check for uppercase
  * Return: Always 0.
  */
 
