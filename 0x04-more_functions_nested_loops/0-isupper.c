@@ -2,6 +2,7 @@
 /**
  * _isupper - check if c is uppercase
  * @c: is an integer
+ * copyright © 2022
  * Return: Always 0.
  */
 
