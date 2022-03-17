@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_most_numbers - void
+ * print_most_numbers - print numbers
  *
  * copyright © baccrie 2022
  * Return: Always 0
