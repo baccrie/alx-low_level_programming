@@ -1,24 +1,26 @@
 #include "main.h"
 /**
- * more_numbers - print more numbers
- *
- * Return: Always 0
+ * more_numbers - function prints 1 to 14
+ * Return: 0
  */
 void more_numbers(void)
 {
-	int num = 0;
-	int count = 0;
 
-	while (count <= 9)
+	int a = 0;
+	int b = 0;
+
+	while (b <= 9)
 	{
-		while(num <= 14)
+		while (a <= 14)
 		{
-			if (num > 9)
-				_putchar(num / 10 + '0');
-			_putchar(num % 10 + '0');
+			if (a > 9)
+				_putchar(a / 10 + '0');
+			_putchar(a % 10 + '0');
+			a++;
+
 		}
-		_putchar('\n');
-		count++;
-		num = 0;
+	_putchar('\n');
+	b++;
+	a = 0;
 	}
 }
