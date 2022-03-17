@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _isupper - check if int c is uppercase
- * copyright 2022 © baccrie
+ * _isupper - baccrie © 2022 copyright
+ * check if int c is uppercase
  * Return: Always 0.
  */
 
