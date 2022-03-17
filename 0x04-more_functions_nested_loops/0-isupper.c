@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _isupper - baccrie
- * @c: print int
+ * @ print int
  * Return: Always 0.
  */
 
