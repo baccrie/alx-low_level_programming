@@ -1,40 +1,40 @@
 #include <stdio.h>
 /**
  * main - Entry point
+ * Task 10. Inventing is a combination
+ * of brains and materials.
+ * The more brains you use,
+ * the less material you need
+ * Copyright © 2022 baccrie
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 
 {
-int number_left;
-int number_right;
 
-/*for 0-9 with ASCII*/
+	/* Declaring variable for the for loops*/
+        int left;
+        int right;
 
-for (number_left = 48; number_left <= 57; number_left++)
-{
-for (number_right = number_left + 1 ; number_right <= 57; number_right++)
-{
-
-putchar(number_left);
-putchar (number_right);
-
-/*break program if the condition is true (if is 99=+)*/
-if ((number_left == 56) && (number_right == 57))
-{
-break;
-}
-
-putchar(','); /*print (,)*/
-putchar (' '); /*prirint a space*/
-
-}
-
-}
-
-putchar('\n'); /*new line*/
-
-return (0);
-
+	/* Outer loop */
+        for (left = 48; left < 57; left++)
+        {
+		/* inner loop */
+                for (right = left + 1; right < 58; ++right)
+                {
+                        putchar(left);
+                        putchar(right);
+                        if (left == 56 || right == 57)
+                        {
+                                break;
+                        }
+                        putchar(',');
+                        putchar(' ');
+                }
+                putchar('\n');
+        }
+        return (0);
+        /* Copyright © 2022 */
 }
