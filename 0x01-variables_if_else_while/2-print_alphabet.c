@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry - point
- * Task 1. sometimes suffer from insomnia.
+ * Task 2. sometimes suffer from insomnia.
  * copyright © 2022 baccrie
  *
  * Return: Always 0 (Success)
