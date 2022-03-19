@@ -11,7 +11,6 @@
 int main(void)
 {
 	int numb; /* Declaring variable for loop */
-	
 	for (numb = 48; numb <= 57; numb++)
 	{
 		putchar(numb);
