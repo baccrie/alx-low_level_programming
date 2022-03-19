@@ -1,48 +1,45 @@
 #include <stdio.h>
 /**
  * main - Entry point
+ * Task 11. The success combination in
+ * business is: Do what you do better...
+ * and: do more of what you do...
+ * Copyright © 2022 baccrie
  *
  * Return: Always 0 (Success)
  */
-int main(void)
 
+int main()
 {
-int left; /*Decarling statement*/
-int right;
-int center;
+        /* Declaring variable for the for loops*/
+        int left;
+        int middle;
+        int right;
 
-/*for 0-9 with ASCII*/
-
-for (left = 48; left <= 57; left++)
-{
-for (center = left + 1; center <= 57; center++)
-{
-for (right = center + 1 ; right <= 57; right++)
-
-{
-
-putchar(left); /*print  numbers left, center and rigth ++*/
-putchar (center);
-putchar (right);
-
-/*break program if the condition is true (if is 789=+)*/
-if ((left == 55) && (center == left + 1) && (right == center + 1))
-{
-break; /*terminate the program*/
+        /* Outer loop */
+        for (left = 48; left <= 55; left++)
+        {
+                /* middle loop */
+                middle = left + 1;
+                while (middle <= 56)
+                {
+                        /* most inner loop */
+                        for (right = middle + 1; right <= 57; ++right)
+                        {
+                                putchar(left);
+                                putchar(middle);
+                                putchar(right);
+                                if (left == 55 && middle == 56 && right == 57)
+                                {
+                                        break;
+                                }
+                                putchar(',');
+                                putchar(' ');
+                        }
+                        middle++;
+                }
+        }
+        putchar('\n');
+        return (0);
+        /* Copyright © 2022 */
 }
-
-putchar(','); /*print (,)*/
-putchar (' '); /*prirint a space*/
-
-} /*end for #3*/
-
-} /*end for #2*/
-
-} /*end for #1*/
-
-putchar('\n'); /*new line*/
-
-return (0);
-
-}
-
