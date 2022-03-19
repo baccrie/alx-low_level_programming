@@ -2,6 +2,7 @@
 /**
  * main - Entry - point
  * Task 1. sometimes suffer from insomnia.
+ * copyright © 2022 baccrie
  *
  * Return: Always 0 (Success)
  */
@@ -15,4 +16,5 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
+	/* copyright © 2022 baccrie all right reserved */
 }
