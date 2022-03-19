@@ -11,30 +11,28 @@
  */
 
 int main(void)
-
 {
-
 	/* Declaring variable for the for loops*/
-        int left;
-        int right;
+	int left;
+	int right;
 
 	/* Outer loop */
-        for (left = 48; left < 57; left++)
-        {
+	for (left = 48; left < 57; left++)
+	{
 		/* inner loop */
-                for (right = left + 1; right < 58; ++right)
-                {
-                        putchar(left);
-                        putchar(right);
-                        if (left == 56 || right == 57)
-                        {
-                                break;
-                        }
-                        putchar(',');
-                        putchar(' ');
-                }
-                putchar('\n');
-        }
-        return (0);
-        /* Copyright © 2022 */
+		for (right = left + 1; right < 58; ++right)
+		{
+			putchar(left);
+			putchar(right);
+			if (left == 56 || right == 57)
+			{
+				break;
+			}
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
+	/* Copyright © 2022 */
 }
