@@ -8,6 +8,7 @@
 int main(void)
 {
 	int numb; /* Declare variable for loop */
+
 	numb = 0;
 	while (numb < 10) /* loops */
 	{
