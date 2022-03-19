@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
  */
 
-int main()
+int main(void)
 {
 	/* Declaring variable for the for loops*/
 	int left;
