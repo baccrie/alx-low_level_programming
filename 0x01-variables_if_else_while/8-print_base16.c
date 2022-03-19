@@ -1,27 +1,26 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
  * main - Entry - point
  * Task 8. Hexadecimal
- *
+ * Copyright © 2022 baccrie
  * Return: Always  0 (Success)
  */
 int main(void)
 {
-int num = 48;
-char letter = 'a';
+	/* Declare variables */
+	int num;
+	char letter;
 
-while (num <= 57)
-{
-putchar(num);
-++num;
-}
-while (letter <= 'f')
-{
-putchar(letter);
-++letter;
-}
-putchar('\n');
-return (0);
+	/* for loops */
+	for (num = 48; num <= 57; num++)
+	{
+		putchar(num);
+	}
+	for (letter = 'a'; letter <= 'f'; letter++)
+	{
+		putchar(letter);
+	}
+	putchar('\n');
+	return (0);
+	/* Copyright © 2022 baccrie */
 }
