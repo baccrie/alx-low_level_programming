@@ -28,12 +28,12 @@ void jack_bauer(void)
 				fourth = 0;
 				while (fourth <= 9)
 				{
-					putchar(first + '0');
-					putchar(second + '0');
-					putchar(':');
-					putchar(third + '0');
-					putchar(fourth + '0');
-					putchar('\n');
+					_putchar(first + '0');
+					_putchar(second + '0');
+					_putchar(':');
+					_putchar(third + '0');
+					_putchar(fourth + '0');
+					_putchar('\n');
 					fourth++;
 				}
 				third++;
@@ -46,6 +46,6 @@ void jack_bauer(void)
 		}
 		first++;
 	}
-	putchar('\n');
+	_putchar('\n');
 	/* copyright © 2022 baccrie */
 }
