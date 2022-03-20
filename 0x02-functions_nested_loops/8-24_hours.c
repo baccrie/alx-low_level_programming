@@ -55,9 +55,6 @@ void jack_bauer(void)
 	/*00:00 to 23:59 */
 	/* I wont forget crazy characters like */
 	/*chloe, Christopher Henderson, Nina myers */
-	/* Tony Almeida, Ramon Salazar, Preaident Palmer*/
-	/*, Stephen Saunders, And finally */
-	/* Charles logan, James heller */
-	/*the king Jack Bauer */
+	/* Tony Almeida, and the king Jack Bauer */
 	/* copyright © 2022 baccrie */
 }
