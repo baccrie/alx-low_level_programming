@@ -11,7 +11,8 @@
 
 void jack_bauer(void)
 {
-	int first, second, third, fourth;/* Declaring variables for all the positions */
+	int first, second, third, fourth;
+	/* Declaring variables for all the positions */
 
 	/* Nesting of 4 while loops*/
 	/* Study the loops carefully to understand how */
