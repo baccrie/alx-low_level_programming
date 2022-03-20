@@ -49,9 +49,8 @@ void jack_bauer(void)
 		}
 		first++;
 	}
-	/* i love watching 24 hours movie */
-	/*but it took me a whole */
-	/* 24 hours to write a script that prints */
+	/* i love watching 24 hours movie but it took me */
+	/*  whole 24 hours to write a script that prints */
 	/*00:00 to 23:59 */
 	/* copyright © 2022 baccrie */
 }
