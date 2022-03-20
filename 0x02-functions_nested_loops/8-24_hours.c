@@ -53,8 +53,5 @@ void jack_bauer(void)
 	/*but it took me a whole */
 	/* 24 hours to write a script that prints */
 	/*00:00 to 23:59 */
-	/* I wont forget crazy characters like */
-	/*chloe, Christopher Henderson, Nina myers */
-	/* Tony Almeida, and the king Jack Bauer */
 	/* copyright © 2022 baccrie */
 }
