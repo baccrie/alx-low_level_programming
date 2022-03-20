@@ -1,23 +1,24 @@
 #include "main.h"
-
 /**
  * print_last_digit - prints the last digit
  * of a number
  * @n: n is an integer
- *
- * Description: prints the last digit of a number
+ * Task 7. There are only 3 colors, 10 digits
+ * and 7 notes; it's what we do with them 
+ * that's important
+ * Copyright © 2022 baccrie
  *
  * Return: integer
  */
 
 int print_last_digit(int n)
 {
-	int last = n % 10;
-
+	int lastDigit = n % 10;
 	if (n < 0)
-		last = last * -1;
-
-	_putchar(last + '0');
-
-	return (last);
+	{
+		lastDigit = lastDigit * (-1);
+	}
+	_putchar(lastDigit + '0');
+	return (lastDigit);
+	/* Copyright © 2022 baccrie */
 }
