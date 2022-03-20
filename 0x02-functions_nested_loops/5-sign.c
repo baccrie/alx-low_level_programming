@@ -2,7 +2,9 @@
 /**
  * print_sign - prints sign of a number
  * *@n: The int to use
- * Return: Returns 1 and prints + if n is greater than zero , returns 0 and prints 0 if n is zero
+ * Return: Returns 1 and prints + if n is
+ * greater than zero , returns 0
+ * and prints 0 if n is zero
  * Returns -1 and prints - if n is less than zero
  * Copyright © 2022 baccrie
  */
