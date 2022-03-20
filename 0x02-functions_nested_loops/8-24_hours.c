@@ -49,6 +49,8 @@ void jack_bauer(void)
 		}
 		first++;
 	}
-	_putchar('\n');
+	/* i love watching 24 hours movie but it took me a whole */
+	/* 24 hours to write a script that prints 00:00 to 23:59 */
+	/* I wont forget crazy characters like chloe, Christopher Henderson, Nina myers, Tony Almeida, Ramon Salazar, Preaident Palmer, Stephen Saunders, And finally the king Jack Bauer */
 	/* copyright © 2022 baccrie */
 }
