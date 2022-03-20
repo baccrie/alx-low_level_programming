@@ -4,7 +4,7 @@
  * of a number
  * @n: n is an integer
  * Task 7. There are only 3 colors, 10 digits
- * and 7 notes; it's what we do with them 
+ * and 7 notes; it's what we do with them
  * that's important
  * Copyright © 2022 baccrie
  *
@@ -13,7 +13,9 @@
 
 int print_last_digit(int n)
 {
-	int lastDigit = n % 10;
+	int lastDigit;
+
+	lastDigit = n % 10;
 	if (n < 0)
 	{
 		lastDigit = lastDigit * (-1);
