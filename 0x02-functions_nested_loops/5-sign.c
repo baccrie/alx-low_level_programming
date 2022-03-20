@@ -1,31 +1,28 @@
 #include "main.h"
 /**
- * print_sign - return 0 letter not
- * lowercase, 1 letter lowercase
- * *@n: The int to print
- * Return: Returns 1 (print +) n>0
- * returns
- * 0 (is 0) n=0, returns -1 (-) n<0
+ * print_sign - prints sign of a number
+ * *@n: The int to use
+ * Return: Returns 1 and prints + if n is greater than zero , returns 0 and prints 0 if n is zero
+ * Returns -1 and prints - if n is less than zero
+ * Copyright © 2022 baccrie
  */
+
 int print_sign(int n)
 {
-
-if (n > 0)
-{
-_putchar ('+');
-return (1);
-}
-
-else if (n == 0)
-{
-_putchar ('0');
-return (0);
-}
-
-else
-{
-_putchar ('-');
-return (-1);
-}
-
+	if (n > 0)
+	{
+		_putchar ('+');
+		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar ('0');
+		return (0);
+	}
+	else
+	{
+		_putchar ('-');
+		return (-1);
+	}
+	/* Copyright 2022 © baccrie all right reserved */
 }

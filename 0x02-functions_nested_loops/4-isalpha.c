@@ -4,7 +4,7 @@
  * _isalpha - checks for alphabetic
  * character
  * @c: c is an ascii character
- *
+ * Copyright 2022 © baccrie
  * Return: 1 (if letter)
  */
 
@@ -22,4 +22,5 @@ int _isalpha(int c)
 	{
 		return (0);
 	}
+	/* Copyright 2022 © baccrie all right reserve */
 }
