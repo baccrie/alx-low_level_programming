@@ -1,50 +1,51 @@
 #include "main.h"
-
 /**
- * jack_bauer - prints every minute of the
- * day
+ * jack_bauer - prints all the moments in bauers life
+ * starting from 00:00 to 23:59
+ * Task 8.I am a federal agent Jack Bauer
+ * and today is the longest day of my life
+ * Copyright © 2022 baccrie
  *
- * Description prints every minute
- *
- * Return: void
+ * Return: Always 0 (Success)
  */
 
 void jack_bauer(void)
 {
-	int hours_tens, hours_ones, minutes_tens, minutes_ones, hours_max;
+	int first, second, third, fourth;/* Declaring variables for all the positions */
 
-	hours_max = 58;
-	hours_tens = '0';
-	while (hours_tens < '3')
+	/* Nesting of 4 while loops*/
+	/* Study the loops carefully to understand how */
+	/* 00:00 => 23:59 is printed */
+	first = 0;
+	while (first <= 2)
 	{
-		if (hours_tens == '2')
+		second = 0;
+		while (second <= 9)
 		{
-			hours_max = '4';
-		}
-		hours_ones = '0';
-		while (hours_ones < hours_max)
-		{
-			minutes_tens = '0';
-			while (minutes_tens < '6')
+			third = 0;
+			while (third <= 5)
 			{
-				minutes_ones = '0';
-				while (minutes_ones < 58)
+				fourth = 0;
+				while (fourth <= 9)
 				{
-					_putchar(hours_tens);
-					_putchar(hours_ones);
-					_putchar(':');
-					_putchar(minutes_tens);
-					_putchar(minutes_ones);
-					_putchar('\n');
-					minutes_ones++;
+					putchar(first + '0');
+					putchar(second + '0');
+					putchar(':');
+					putchar(third + '0');
+					putchar(fourth + '0');
+					putchar('\n');
+					fourth++;
 				}
-				minutes_ones = '0';
-				minutes_tens++;
+				third++;
 			}
-			minutes_tens = '0';
-			hours_ones++;
+			if (second == 3)/* Breaks at 23:59 */
+			{
+				break;
+			}
+			second++;
 		}
-		hours_ones = '0';
-		hours_tens++;
+		first++;
 	}
+	putchar('\n');
+	/* copyright © 2022 baccrie */
 }
