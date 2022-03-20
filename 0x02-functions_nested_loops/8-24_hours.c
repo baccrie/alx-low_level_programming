@@ -39,7 +39,7 @@ void jack_bauer(void)
 				third++;
 			}
 			second++;
-			if (first == 2 && second == 4))
+			if (first == 2 && second == 4)
 			{
 				/* The if condition checks if time is 24:00 */
 				/* And breaks out of the loop */
