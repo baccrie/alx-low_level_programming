@@ -7,3 +7,6 @@ A function that takes a pointer to an int as parameter and updates the value i
 
 ###	1-swap.c
 function that swaps the values of two integers.
+
+###	2-strlen
+A function that returns the length of a string.
