@@ -16,4 +16,5 @@ int _strlen(char *s)
 	{
 	}
 	return (count);
+	/* Copyright © baccrie 2022 */
 }
