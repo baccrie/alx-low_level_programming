@@ -12,7 +12,7 @@
 
 void _puts(char *str)
 {
-	char *ch
+	char *ch;
 	int no;
 
 	ch = str;
