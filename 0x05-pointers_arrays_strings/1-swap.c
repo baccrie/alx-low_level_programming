@@ -11,9 +11,8 @@ void swap_int(int *a, int *b)
 {
 	int use; /* Declaring a variable for the interchange */
 
-	use = *&a;
-	*&a = *&b;
-	*&b = use;
-
+	use = *b;
+	*b = *a;
+	*a = use;
 	/* Copyright © 2022 baccrie */
 }
