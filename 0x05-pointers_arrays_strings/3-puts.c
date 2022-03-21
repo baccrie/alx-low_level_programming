@@ -15,7 +15,7 @@ void _puts(char *str)
 	char *ch
 	int no;
 
-	c = str;
+	ch = str;
 	for (no = 0; ch[no]; no++) /*Count characters */
 	{
 		_putchar (ch[no]);
