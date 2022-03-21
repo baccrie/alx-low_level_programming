@@ -3,7 +3,9 @@
 /**
  * _strlen - prints the length of a string
  * @s: a pointer to an integer
- * Task 2. 
+ * Task 2 This report, by its very length, defends
+ * itself against the risk of being read
+ *
  * Copyright © 2022 baccrie
  * Return: string length
  */
