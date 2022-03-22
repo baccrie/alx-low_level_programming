@@ -6,7 +6,7 @@
  * Return: void
  */
 
-int main()
+void times_table(void)
 {
 	int n;
 	int cycle;
