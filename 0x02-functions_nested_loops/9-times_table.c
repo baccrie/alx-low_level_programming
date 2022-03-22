@@ -22,19 +22,11 @@ void times_table(void)
 			{
 				putchar(',');
 				putchar(' ');
-				if (cycle == 0 || cycle == 1)
+				if (cycle == 0 || cycle == 1 || (cycle == 2 && n < 4));
 				{
 					putchar(' ');
 				}
-				else if (cycle == 2 && n < 4)
-				{
-					putchar(' ');
-				}
-				else if (cycle == 3 && n < 3)
-				{
-					putchar(' ');
-				}
-				else if (cycle == 4 && n < 2)
+				else if ((cycle == 3 && n < 3) || (cycle == 4 && n < 2))
 				{
 					putchar(' ');
 				}
