@@ -8,25 +8,19 @@
  */
 int main(void)
 {
-	long int i, j, k, next;
+	int sum, sum1, sum2, count;
 
-	j = 1;
-
-	k = 2;
-
-	for (i = 1; i <= 50; ++i)
+	sum2 = 1;
+	sum1 = 2;
+	printf("%d, %d, ", sum2, sum1);
+	while (count <= 48)
 	{
-		if (j != 20365011074)
-		{
-			printf("%ld, ", j);
-		} else
-		{
-			printf("%ld\n", j);
-		}
-		next = j + k;
-		j = k;
-		k = next;
+		sum = sum1 + sum2;
+		printf("%d", sum);
+		sum2 = sum1;
+		sum1 = sum;
+		count++;
 	}
-
+	putchar('\n');
 	return (0);
 }
