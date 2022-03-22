@@ -2,8 +2,8 @@
 /**
  * print_alphabet_x10 - print alphabet
  * Task 2. 10 x alphabet
- * Cooyright © 2022 baccrie
- * Return: always 0
+ * Copright © 2022 baccrie
+ * Return: void
  */
 
 void print_alphabet_x10(void)
@@ -21,4 +21,5 @@ void print_alphabet_x10(void)
 		cycle++;
 		_putchar('\n');
 	}
+	/* Copyright 2022 © baccrie */
 }

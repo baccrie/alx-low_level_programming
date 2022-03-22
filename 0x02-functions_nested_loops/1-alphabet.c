@@ -1,14 +1,11 @@
 #include "main.h"
 /**
- * print_alphabet - print alphabet
+ * print_alphabet - prints alphabet
  * Task 1. I sometimes suffer from insomnia.
  * And when I can't fall asleep,
  * I play what I call the alphabet game.
- *
- * The main.h is an header file that has th
- * the prototyping definition of the
  * copyright © baccrie 2022
- * Return: Always 0 (Success)
+ * Return: void
  */
 
 void print_alphabet(void)

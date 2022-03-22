@@ -13,8 +13,9 @@
 
 int print_last_digit(int n)
 {
-	int lastDigit;
+	int lastDigit;/* Declaring a variable for the last digit */
 
+	/* Note : the last digit of any 'n' number is always equal to n mod 10 */
 	lastDigit = n % 10;
 	if (n < 0)
 	{
