@@ -30,7 +30,7 @@ void times_table(void)
 				{
 					putchar(' ');
 				}
-				else if(cycle == 5 && n < 1)
+				else if (cycle == 5 && n < 1)
 				{
 					putchar(' ');
 				}
@@ -48,5 +48,4 @@ void times_table(void)
 		putchar('\n');
 		cycle++;
 	}
-	/* Copyright © 2022 baccrie */
 }
