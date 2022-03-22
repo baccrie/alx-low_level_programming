@@ -13,7 +13,7 @@ int main(void)
 	/* it has more memory and can accommodate the big fibonnaci numbers */
 	unsigned long int sum, sum1, sum2, evenSum;
 
-	evenSum = 0;
+	evenSum = 2;
 	sum = 0;
 	sum2 = 1;
 	sum1 = 2;
