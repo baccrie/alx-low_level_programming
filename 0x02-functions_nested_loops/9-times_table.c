@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * times_table - prints 9 times table starting with 0
  * Copyright © 2022 baccrie
