@@ -8,17 +8,19 @@
  */
 int main(void)
 {
+	/* Declaring the variables using unsigned long because */
+	/* it has more memory and can accommodate the big fibonnaci numbers */
 	unsigned long int sum, sum1, sum2;
 	int count;
 
 	sum2 = 1;
 	sum1 = 2;
 	printf("%lu, %lu, ", sum2, sum1);
-	while (count <= 48)
+	while (count <= 47)
 	{
 		sum = sum1 + sum2;
 		printf("%lu", sum);
-		if (count != 48)
+		if (count != 47)
 		{
 			printf(", ");
 		}
@@ -28,4 +30,5 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
+	/*.Copyright © baccrie 2022 */
 }
