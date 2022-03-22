@@ -17,6 +17,10 @@ int main(void)
 	{
 		sum = sum1 + sum2;
 		printf("%d", sum);
+		if (count != 48)
+		{
+			printf(", ");
+		}
 		sum2 = sum1;
 		sum1 = sum;
 		count++;
