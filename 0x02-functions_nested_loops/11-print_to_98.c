@@ -12,7 +12,8 @@
  */
 void print_to_98(int n)
 {
-	int m;
+	int m; /* Declaring a variable for the loops */
+
 	if (n < 98)
 	{
 		for (m = n; m <= 98; m++)
@@ -32,9 +33,10 @@ void print_to_98(int n)
 			printf("%d", m);
 			if (m != 98)
 			{
-				printf(" ");
+				printf(", ");
 			}
 		}
 		putchar('\n');
 	}
+	/* Copyright © 2022 baccrie */
 }
