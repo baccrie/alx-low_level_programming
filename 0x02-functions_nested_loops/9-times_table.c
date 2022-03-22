@@ -23,10 +23,10 @@ void times_table(void)
 				putchar(',');
 				putchar(' ');
 			}
+			n++;
 		}
 		putchar('\n');
 		cycle++;
 	}
 	/* Copyright © 2022 baccrie */
 }
-	
