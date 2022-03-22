@@ -7,7 +7,7 @@
  * Copyright © 2022 baccrie
  * Return: Always 0 (Success)
  */
-int main(void)
+int main()
 {
 	/* Declaring Variables to use */
 	int sum;
