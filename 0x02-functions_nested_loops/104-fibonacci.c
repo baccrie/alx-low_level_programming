@@ -11,7 +11,7 @@ int main(void)
 {
 	/* Declaring the variables using unsigned long because */
 	/* it has more memory and can accommodate the big fibonnaci numbers */
-	unsigned long int sum, sum1, sum2;
+	unsigned long sum, sum1, sum2;
 	int count;
 
 	sum2 = 1;
