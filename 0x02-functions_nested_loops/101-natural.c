@@ -7,7 +7,7 @@
  * Copyright © 2022 baccrie
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
 	/* Declaring Variables to use */
 	int sum;
@@ -25,5 +25,6 @@ int main()
 	}
 	printf("%d", sum);
 	putchar('\n');
+	return (0);
 	/* Copyright © 2022 baccrie */
 }
