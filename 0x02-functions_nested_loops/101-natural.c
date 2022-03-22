@@ -12,7 +12,7 @@ int main(void)
 	int i;
 
 	sum = 0;
-	int = 1;
+	i = 1;
 	while (i < 1024)
 	{
 		if ((i % 3 == 0) || (i % 5 == 0))
@@ -22,4 +22,5 @@ int main(void)
 		++i;
 	}
 	putchar('\n');
+	return (0);
 }
