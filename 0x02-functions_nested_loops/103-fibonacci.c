@@ -19,7 +19,6 @@ int main(void)
 	sum1 = 2;
 	while (sum <= 4000000)
 	{
-		
 		sum = sum1 + sum2;
 		if ((sum % 2) == 0)
 		{
@@ -28,6 +27,7 @@ int main(void)
 		sum2 = sum1;
 		sum1 = sum;
 	}
+	printf("%lu", evenSum);
 	putchar('\n');
 	return (0);
 	/*.Copyright © baccrie 2022 */
