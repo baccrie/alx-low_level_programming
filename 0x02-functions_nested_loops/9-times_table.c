@@ -17,8 +17,12 @@ void times_table(void)
 		n = 0;
 		while (n <= 9)
 		{
-			printf("%d, ", cycle * n);
-			n++;
+			printf("%d", cycle * n);
+			if (n != 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 		putchar('\n');
 		cycle++;
