@@ -22,7 +22,7 @@ void times_table(void)
 			{
 				putchar(',');
 				putchar(' ');
-				if (cycle == 0 || cycle == 1 || (cycle == 2 && n < 4));
+				if ((cycle == 0 || cycle == 1) || (cycle == 2 && n < 4))
 				{
 					putchar(' ');
 				}
