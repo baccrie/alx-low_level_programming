@@ -22,6 +22,10 @@ void times_table(void)
 			{
 				putchar(',');
 				putchar(' ');
+				if ((cycle * n) < 10)
+				{
+					putchar(' ');
+				}
 			}
 			n++;
 		}
