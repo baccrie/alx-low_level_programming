@@ -20,6 +20,7 @@ int main(void)
 	while (sum <= 4000000)
 	{
 		sum = sum1 + sum2;
+		/* If statement to check for even and store inside another variable */
 		if ((sum % 2) == 0)
 		{
 			evenSum = evenSum + sum;
