@@ -12,11 +12,11 @@ int main(void)
 
 	sum2 = 1;
 	sum1 = 2;
-	printf("%d, %d, ", sum2, sum1);
+	printf("%lu, %lu, ", sum2, sum1);
 	while (count <= 48)
 	{
 		sum = sum1 + sum2;
-		printf("%d", sum);
+		printf("%lu", sum);
 		if (count != 48)
 		{
 			printf(", ");
