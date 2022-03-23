@@ -2,7 +2,9 @@
 /**
  * print_line - prints straight line
  * @n: parameter
+ * Return: void
  */
+
 void print_line(int n)
 {
 	int count;
@@ -19,8 +21,9 @@ void print_line(int n)
 		while (count <= n)
 		{
 			putchar(c);
-			++n;
+			count++;
 		}
 		putchar('\n');
 	}
+	/* Copyright © 2022 baccrie */
 }
