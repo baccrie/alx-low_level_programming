@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 * main - causes an infinite loop
-*
+* Copyright © 2022 baccrie
 * Return: 0
 */
 
