@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * more_numbers - function prints 1 to 14
+ * Copyright © 2022 baccrie
  * Return: 0
  */
 void more_numbers(void)
@@ -25,4 +26,5 @@ void more_numbers(void)
 	cycle++;
 	num = 0;
 	}
+	/* Copyright © 2022 baccrie */
 }
