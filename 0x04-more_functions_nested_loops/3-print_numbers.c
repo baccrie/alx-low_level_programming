@@ -3,7 +3,7 @@
  * print_numbers - void
  *
  * copyright © baccrie 2022
- * Return: Always 0
+ * Return: void
  */
 
 void print_numbers(void)
@@ -16,4 +16,5 @@ void print_numbers(void)
 		num++;
 	}
 	_putchar('\n');
+	/* Copyright © baccrie 2022 */
 }

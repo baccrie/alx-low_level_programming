@@ -2,9 +2,8 @@
 /**
  * print_most_numbers - print from 1 to 9
  * skipping 2 and 4
- * Return: Always 0
+ * Return: void
  */
-
 
 void print_most_numbers(void)
 {
@@ -12,6 +11,7 @@ void print_most_numbers(void)
 
 	while (i < 58)
 	{
+		/* the if statement excludes 2 & 4 */
 		if (i != 50 && i != 52)
 		{
 			_putchar(i);
@@ -20,4 +20,5 @@ void print_most_numbers(void)
 		i++;
 	}
 	_putchar('\n');
+	/* Copyright © 2022 baccrie */
 }
