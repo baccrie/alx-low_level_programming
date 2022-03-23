@@ -12,7 +12,7 @@ int main(void)
 	/* Declaring the variables using unsigned long because */
 	/* it has more memory and can accommodate the big fibonnaci numbers */
 	unsigned long sum, sum1, sum2;
-	int count;
+	short int count;
 
 	sum2 = 1;
 	sum1 = 2;
