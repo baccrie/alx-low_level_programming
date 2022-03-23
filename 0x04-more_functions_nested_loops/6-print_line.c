@@ -2,6 +2,7 @@
 /**
  * print_line - prints straight line
  * @n: parameter
+ * Copyright © 2022 baccrie
  * Return: void
  */
 
@@ -14,16 +15,16 @@ void print_line(int n)
 	count = 1;
 	if (n <= 0)
 	{
-		putchar('\n');
+		_putchar('\n');
 	}
 	else
 	{
 		while (count <= n)
 		{
-			putchar(c);
+			_putchar(c);
 			count++;
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 	/* Copyright © 2022 baccrie */
 }
