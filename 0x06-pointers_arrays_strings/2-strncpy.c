@@ -1,78 +1,29 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * isPrintableASCII - determines if n is a printable ASCII char
- * @n: integer
- * Return: 1 if true, 0 if false
+ *_strncpy -  copies a string
+ *@dest: A pointer to an char that will be updated
+ *@src: A pointer to an char that will be updated
+ *@n: value
+ *Return: dest
  */
-int isPrintableASCII(int n)
-{
-	return (n >= 32 && n <= 126);
-}
 
-/**
- * printHexes - print hex values for string b in formatted form
- * @b: string to print
- * @start: starting position
- * @end: ending position
- */
-void printHexes(char *b, int start, int end)
-{
-	int i = 0;
+char *_strncpy(char *dest, char *src, int n)
 
-	while (i < 10)
+{
+	int i;
+
+	i = 0;
+	while (i < n && src[i] != '\0')
 	{
-		if (i < end)
-			printf("%02x", *(b + start + i));
-		else
-			printf("  ");
-		if (i % 2)
-			printf(" ");
+		dest[i] = src[i];
 		i++;
 	}
-}
 
-/**
- * printASCII - print ascii values for string b,
- * formatted to replace nonprintable chars with '.'
- * @b: string to print
- * @start: starting position
- * @end: ending position
- */
-void printASCII(char *b, int start, int end)
-{
-	int ch, i = 0;
-
-	while (i < end)
+	while (i < n)
 	{
-		ch = *(b + i + start);
-		if (!isPrintableASCII(ch))
-			ch = 46;
-		printf("%c", ch);
+		dest[i] = '\0';
 		i++;
 	}
-}
 
-/**
- * print_buffer - prints a buffer
- * @b: string
- * @size: size of buffer
- */
-void print_buffer(char *b, int size)
-{
-	int start, end;
-
-	if (size > 0)
-	{
-		for (start = 0; start < size; start += 10)
-		{
-			end = (size - start < 10) ? size - start : 10;
-			printf("%08x: ", start);
-			printHexes(b, start, end);
-			printASCII(b, start, end);
-			printf("\n");
-		}
-	} else
-		printf("\n");
+	return (dest);
 }
