@@ -12,14 +12,15 @@
 
 int _strlen(char *s)
 {
-	int count, i;
+	/* Declaring a variable for the number of the times the program loops */
+	int i;
 
 	count = 0;
 	i = 0;
 	while(s[i])
 	{
-		count += i;
 		i++;
 	}
 	return (count);
+	/* Copyright © 2022 baccrie */
 }
