@@ -21,9 +21,9 @@ void print_rev(char *s)
 	{
 		i++;
 	}
-	for (j = (i - 1); j >= 0; j--)
+	for (j = i; j >= 0; j--)
 	{
-		_putchar(j);
+		_putchar(s[j]);
 	}
 	_putchar ('\n');
 	/* Copyright © 2022 baccrie */
