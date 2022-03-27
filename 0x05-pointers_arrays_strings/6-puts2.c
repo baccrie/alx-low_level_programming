@@ -17,6 +17,7 @@ void puts2(char *str)
 	i = 0;
 	while (str[i])
 	{
+		/* the if statement checks if position is even or odd */
 		if ((i % 2) == 0)
 		{
 			_putchar(str[i]);
