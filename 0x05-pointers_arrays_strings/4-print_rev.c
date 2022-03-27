@@ -13,17 +13,17 @@
 
 void print_rev(char *s)
 {
-	int c;/* variable for counting */
+	/* loops variable */
+	int i, j;
 
-	c = 0;
-	while (s[c] != '\0')
+	i = 0;
+	while (s[i])
 	{
-		c++;
+		i++;
 	}
-
-	for (c = c - 1 ; c >= 0; c--)
+	for (j = i; j >= 0; j--)
 	{
-		_putchar (s[c]);
+		_putchar(j);
 	}
 	_putchar ('\n');
 	/* Copyright © 2022 baccrie */
