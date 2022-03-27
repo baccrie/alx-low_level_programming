@@ -12,15 +12,12 @@
 
 void _puts(char *str)
 {
-	char *ch;
-	int no;
+	int i = 0;
 
-	ch = str;
-	for (no = 0; ch[no]; no++) /*Count characters */
+	while (str[i])
 	{
-		_putchar (ch[no]);
-
+		putchar(str[i]);
+		i++;
 	}
-	_putchar('\n');
 	/* Copyright © 2022 baccrie */
 }
