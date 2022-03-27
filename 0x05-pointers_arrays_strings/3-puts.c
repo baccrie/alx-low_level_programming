@@ -20,6 +20,6 @@ void _puts(char *str)
 		_putchar(str[i]);
 		i++;
 	}
-	_putchar('/n);
+	_putchar('/n');
 	/* Copyright © 2022 baccrie */
 }
