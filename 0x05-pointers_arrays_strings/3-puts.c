@@ -12,6 +12,7 @@
 
 void _puts(char *str)
 {
+	/* Declaring the while loop variable */
 	int i = 0;
 
 	while (str[i])
@@ -19,5 +20,6 @@ void _puts(char *str)
 		_putchar(str[i]);
 		i++;
 	}
+	_putchar('/n);
 	/* Copyright © 2022 baccrie */
 }
