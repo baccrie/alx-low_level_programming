@@ -14,5 +14,6 @@ void swap_int(int *a, int *b)
 	use = *b;
 	*b = *a;
 	*a = use;
+
 	/* Copyright © 2022 baccrie */
 }

@@ -10,5 +10,6 @@
 void reset_to_98(int *n)
 {
 	*n = 98;
+
 	/* Copyright © 2022 baccrie */
 }

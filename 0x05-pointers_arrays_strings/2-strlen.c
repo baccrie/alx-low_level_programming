@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _strlen - prints the length of a string
- * @s: a pointer to an integer
+ * @s: a pointer to an array string
  * Task 2 This report, by its very length, defends
  * itself against the risk of being read
  *
@@ -12,11 +12,14 @@
 
 int _strlen(char *s)
 {
-	int count; /* Declaring the variable for the length */
+	int count, i;
 
-	for (count = 0; s[count] != '\0'; count++)
+	count = 0;
+	i = 0;
+	while(s[i])
 	{
+		count += i;
+		i++;
 	}
 	return (count);
-	/* Copyright © baccrie 2022 */
 }
