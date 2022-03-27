@@ -14,21 +14,27 @@
 void puts_half(char *str)
 
 {
-	int i, last;
+	int i, j, n;
 
 	i = 0;
-	while (str[i] != '\0')
+	j = 0;
+	while (str[i])
 	{
 		i++;
 	}
-
-	last = (i + 1) / 2;
-
-	for (i = last; str[i]; i++)
+	if ((i % 2) == 0)
 	{
-		_putchar (str[i]);
+		n = i / 2;
 	}
-
+	else
+	{
+		n = (i - 1) / 2;
+	}
+	while (n <= i)
+	{
+		_putchar(str[n]);
+		n++;
+	}
 	_putchar ('\n');
 	/* Copyright © 2022 baccrie */
 
