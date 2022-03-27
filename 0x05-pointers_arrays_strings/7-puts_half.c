@@ -19,7 +19,7 @@ void puts_half(char *str)
 	i = 0;
 	while (str[i])
 	{
-		i++;
+		++i;
 	}
 	if ((i % 2) == 0)
 	{
@@ -32,7 +32,7 @@ void puts_half(char *str)
 	while (n < i)
 	{
 		_putchar(str[n]);
-		n++;
+		++n;
 	}
 	_putchar ('\n');
 	/* Copyright © 2022 baccrie */
