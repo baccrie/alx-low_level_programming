@@ -15,7 +15,6 @@ int _strlen(char *s)
 	/* Declaring a variable for the number of the times the program loops */
 	int i;
 
-	count = 0;
 	i = 0;
 	while(s[i])
 	{
