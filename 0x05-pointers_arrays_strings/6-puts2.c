@@ -12,12 +12,16 @@
 
 void puts2(char *str)
 {
-	int co; /*Declaring variable for the loop */
+	int i;
 
-	for (co = 0; str[co] != '\0'; co++)
+	i = 0;
+	while (str[i])
 	{
-		if (co % 2 == 0)
-		_putchar (str[co]);
+		if ((i % 2) == 0)
+		{
+			_putchar(str[i]);
+		}
+		i++;
 	}
 	_putchar ('\n');
 	/* Copyright © 2022 baccrie */
