@@ -14,24 +14,22 @@
 void puts_half(char *str)
 
 {
-	int i, n, p;
+	int i, n, len;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 	{
 		++i;
 	}
-	i = i;
-	if ((i % 2) == 0)
-	{
-		n = i / 2;
-	}
-	else
+	if ((i % 2) != 0)
 	{
 		n = (i - 1) / 2;
 	}
-	p = i - 1;
-	while (n < p)
+	else
+	{
+		n = i / 2;
+	}
+	while (str[n])
 	{
 		_putchar(str[n]);
 		++n;
@@ -40,3 +38,4 @@ void puts_half(char *str)
 	/* Copyright © 2022 baccrie */
 
 }
+

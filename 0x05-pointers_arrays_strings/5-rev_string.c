@@ -9,20 +9,20 @@
 
 void rev_string(char *s)
 {
-	int i, j, k;
+	int i, len, j;
 
-	k = 0;
 	i = 0;
 	while (s[i])
 	{
 		i++;
 	}
-	j = i + 1;
-	while (j >= 0)
+	len = i - 1;
+	j = 0;
+	while (j < i)
 	{
-		s[k] = s[j];
-		k++;
-		j--;
+		s[j] = s[len];
+		--len;
+		++j;
 	}
 	/* Copyright © 2022 baccrie */
 }
