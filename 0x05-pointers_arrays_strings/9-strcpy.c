@@ -18,7 +18,6 @@ char *_strcpy(char *dest, char *src)
 		i++;
 	}
 	i = i + 1;
-	o = 0;
 	n = 0;
 	while (n <= i)
 	{
