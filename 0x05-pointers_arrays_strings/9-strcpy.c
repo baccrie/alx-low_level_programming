@@ -22,9 +22,9 @@ char *_strcpy(char *dest, char *src)
 	n = 0;
 	while (n <= i)
 	{
-		dest[n] = src[o];
+		dest[n] = *src;
 		++n;
-		++o;
+		++*src;
 	}
 	return (dest);
 	/* Copyright © 2022 baccrie */
