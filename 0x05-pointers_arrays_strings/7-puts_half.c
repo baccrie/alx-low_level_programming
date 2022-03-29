@@ -23,7 +23,7 @@ void puts_half(char *str)
 	}
 	if ((i % 2) != 0)
 	{
-		n = (i - 1) / 2;
+		n = (i + 1) / 2;
 	}
 	else
 	{
@@ -38,4 +38,3 @@ void puts_half(char *str)
 	/* Copyright © 2022 baccrie */
 
 }
-

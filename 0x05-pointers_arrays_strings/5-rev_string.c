@@ -16,14 +16,17 @@ void rev_string(char *s)
 	{
 		i++;
 	}
-	len = i - 1;
+
+	char *p = s;
+	char *q;
 	j = 0;
-	while (j < i)
+	while (p[j])
 	{
-		s[j] = s[len];
-		--len;
-		++j;
+		q[j] = s[i];
+		i--;
+		j++;
 	}
+	s = q;
 	/* Copyright © 2022 baccrie */
 }
 
