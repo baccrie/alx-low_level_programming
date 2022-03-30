@@ -9,15 +9,20 @@
 int _strcmp(char *s1, char *s2)
 
 {
+	int i, diff;
 
-	char *str_one = s1;
-	char *str_two = s2;
-
-	while (*str_one != '\0' && *str_two != '\0' &&  *str_one == *str_two)
+	i = 0;
+	if (s1 == s2)
 	{
-		str_one++;
-		str_two++;
+		diff = 0;
 	}
-
-	return (*str_one - *str_two);
+	else if (s1[0] == s2[0])
+	{
+		diff = 0;
+	}
+	else
+	{
+		diff = s1[0] - s2[0];
+	}
+	return (diff);
 }
