@@ -8,25 +8,22 @@
  */
 
 char *_strncat(char *dest, char *src, int n)
-
 {
-	int i, j;
+	int i,j;
 
 	i = 0;
-	while (dest[i] != '\0') /*WHILE count character */
+	j = 0;
+	while (dest[i])
 	{
 		i++;
 	}
 
-	j = 0;
-	while (j < n && src[j] != '\0') /*WHILE concatenate dest with src*/
+	while (j <= n)
 	{
-		dest[i] = src[j];
-		j++;  /*sum j*/
-		i++; /**sum i*/
+		dest[i] = s[j];
+		i++;
+		j++;
 	}
-
-	dest[i] = '\0'; /*the terminating null byte*/
-
+	dest[i] = '\0';
 	return (dest);
 }
