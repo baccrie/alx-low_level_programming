@@ -3,27 +3,25 @@
  * _strcat -  concatenates two strings
  * @dest: A pointer to an char
  * @src: A pointer to an char
+ * Copyright © 2022 baccrie
  * Return: dest
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int i, j;
+	int i;
 
-	i = 0;
-	while (dest[i] != '\0')
+	for (i = 0; dest[i]; i++)
 	{
-		i++;
 	}
-
-	j = 0;
-	while (src[j] != '\0')
+	/* variable i now at the last + 1 element of dest */
+	while (src[j])
 	{
 		dest[i] = src[j];
-		j++;
 		i++;
+		j++;
 	}
-
 	dest[i] = '\0';
 	return (dest);
+	/* Copyright © 2022 baccrie */
 }

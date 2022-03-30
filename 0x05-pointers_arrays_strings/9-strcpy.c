@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * _strcpy -  copies the string pointed to by src
- * @dest: A pointer to an char
- * @src: A pointer to an char
+ * @dest: A pointer to a char
+ * @src: A pointer to a char
  * Copyright © 2022 baccrie
  * Return: dest
  */
