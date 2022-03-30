@@ -1,9 +1,10 @@
 #include "main.h"
 /**
  * _strncpy -  a function that copies a string
- * dest: A pointer to an char that will be updated
+ * @dest: A pointer to an char that will be updated
  * @src: A pointer to an char that will be updated
  * @n: value
+ * Copyright © 2022 baccrie
  * Return: dest
  */
 
