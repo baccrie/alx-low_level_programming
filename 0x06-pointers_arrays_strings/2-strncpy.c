@@ -1,4 +1,4 @@
-#include "main.h"
+#include "stdio.h"
 /**
  *_strncpy -  copies a string
  *@dest: A pointer to an char that will be updated
@@ -9,37 +9,21 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, j, k, l;
+	char *tmp;
+	int i, j;
 
-	i = 0;
-	k = 0;
-	j = 0;
-	while (src[i])
+	tmp = dest;
+	i = j = 0;
+	while (i < n)
 	{
+		dest[i] = src[i];
 		i++;
 	}
-	if ( n <= i)
+	while (i < n)
 	{
-		while (j < n)
-		{
-			dest[j] = src[j];
-			j++;
-		}
+		dest[i] = tmp[j];
+		i++;
+		j++;
 	}
-	else
-	{
-		while (k < n)
-		{
-			dest[k] = src[k];
-			k++;
-		}
-		l = n + 1;
-		while (dest[l])
-		{
-			dest[l] = dest[j];
-			l++;
-			j++;
-		}
 	return (dest);
-	}
 }
