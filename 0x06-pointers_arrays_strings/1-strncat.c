@@ -1,15 +1,16 @@
 #include "main.h"
 /**
- *_strncat -  concatenates two strings
- *@dest: A pointer to an char that will be updated
- *@src: A pointer to an char that will be updated
- *@n: value
+ * _strncat -  concatenates two strings
+ * dest: A pointer to an char that will be updated
+ * @src: A pointer to an char that will be updated
+ * @n: value
+ * Copyright © 2022 baccrie
  *Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i,j;
+	int i, j;
 
 	i = 0;
 	j = 0;
@@ -25,4 +26,5 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	dest[i] = '\0';
 	return (dest);
+	/* Copyright © 2022 baccrie */
 }
