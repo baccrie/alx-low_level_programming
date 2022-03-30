@@ -14,6 +14,7 @@ char *_strcat(char *dest, char *src)
 
 	for (i = 0; dest[i]; i++)
 	{
+
 	}
 	/* variable i now at the last + 1 element of dest */
 	while (src[j])
