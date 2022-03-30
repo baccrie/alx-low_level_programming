@@ -1,11 +1,11 @@
 #include "main.h"
 /**
  * _strncat -  concatenates two strings
- * dest: A pointer to an char that will be updated
- * @src: A pointer to an char that will be updated
+ * dest: A pointer to a char
+ * @src: A pointer to a char
  * @n: value
  * Copyright © 2022 baccrie
- *Return: dest
+ * Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
