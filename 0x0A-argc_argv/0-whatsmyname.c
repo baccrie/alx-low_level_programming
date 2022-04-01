@@ -2,8 +2,8 @@
 #include "main.h"
 /**
  * main - Entry point
- * @argc - the no of command line arguement
- * @argv - a pointer to the arguement
+ * @argc: the no of command line arguement
+ * @argv: a pointer to the arguement
  * Copyright © 2022 baccrie
  * Return: 0
  */
