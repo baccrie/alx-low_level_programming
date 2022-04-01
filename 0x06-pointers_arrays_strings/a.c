@@ -10,7 +10,12 @@ int test()
 
 int main ()
 {
-	int a;
-	a = test();
-	printf("%d", a);
+	int a[8] = {1, 3, 5, 7, 9, 23, 65, 89};
+	int *b = a;
+	int *c = b;
+
+	while (*b)
+	{
+		printf("%d, ", *b++);
+	}
 }

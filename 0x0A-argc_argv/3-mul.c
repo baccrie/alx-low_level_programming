@@ -6,8 +6,8 @@
  * main - Entry point
  * @argc: the no of command line arguement
  * @argv: a pointer to the arguement
- * Return: 1 or 0
  * Copyright © 2022 baccrie
+ * Return: 1 or 0
  */
 
 int main(int argc, char *argv[])
