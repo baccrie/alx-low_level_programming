@@ -1,8 +1,12 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
- * main - Entry point                                  * @argv - the no of command line arguement
- * @argc[] - a pointer to the arguement
- * Return: 0 or 1                                      * Copyright © 2022 baccrie
+ * main - Entry point
+ * @argc: - the no of command line arguement
+ * @argv: a pointer to the arguement
+ * Return: 0
+ * Copyright © 2022 baccrie
  */
 
 int main (int argc, char *argv[])
@@ -15,4 +19,6 @@ int main (int argc, char *argv[])
 		printf("%s\n", argv[i]);
 		i++;
 	}
+	return (0);
+	/*.Copyright 2022 © baccrie */
 }
