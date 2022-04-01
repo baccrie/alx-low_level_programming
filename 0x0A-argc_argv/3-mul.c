@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
+
 /**
  * main - Entry point
  * @argc: the no of command line arguement
@@ -11,8 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int a;
-	int b;
+	int a, b;
 
 	a = atoi(argv[1]);
 	b = atoi(argv[2]);
