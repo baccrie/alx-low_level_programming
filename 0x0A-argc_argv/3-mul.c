@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-#include "stdlib.h"
+#include <stdlib.h>
 /**
  * main - Entry point
  * @argc: the no of command line arguement
@@ -26,5 +26,5 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	/* Cooyright © 2022 baccrie */
+	/* Copyright © 2022 baccrie */
 }
