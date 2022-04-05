@@ -15,7 +15,7 @@ int main(void)
 
 	i = 612852475143;
 	n = i - 1;
-	while (i > 0)
+	while (n > 0)
 	{
 		if (i % n == 0)
 		{
