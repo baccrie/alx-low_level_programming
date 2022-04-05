@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ * Task 9: 9. Fizz-Buzz
+ * Return: 0 or 1
+ * Copyright © 2022 baccrie
+ */
+
 int main()
 {
 	int i;
