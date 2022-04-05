@@ -25,6 +25,6 @@ int main(void)
 		n--;
 	}
 	printf("%li\n", prime);
+	return (0);
 	/*.Copyright © 2022 baccrie */
 }
-
