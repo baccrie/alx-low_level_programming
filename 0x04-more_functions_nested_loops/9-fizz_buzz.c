@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 
 int main()
 {
@@ -29,5 +29,6 @@ int main()
 		}
 		i++;
 	}
-	putchar('\n');
+	_putchar('\n');
+	/* Copyright © 2022 baccrie */
 }
