@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - Entry point
@@ -37,6 +36,7 @@ int main()
 		}
 		i++;
 	}
-	_putchar('\n');
+	putchar('\n');
+	return (0);
 	/* Copyright © 2022 baccrie */
 }
