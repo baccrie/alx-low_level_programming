@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * print_numbers - void
- *
  * copyright © baccrie 2022
  * Return: void
  */

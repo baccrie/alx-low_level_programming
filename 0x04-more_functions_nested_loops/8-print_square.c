@@ -1,35 +1,34 @@
-#include "main.h"
+#include "stdio.h"
 /**
  * print_square - prints a square
- * @size: print size
- * Return: Always 0.
+ * @size: length and breadth of square
+ * Return: 0 for size <= 0 else 1
+ * Copyright © 2022 baccrie
  */
 
 void print_square(int size)
 {
+	int i, j;
 
-	/*Delcaring statements*/
-	int i;
-	int z;
-
-	if (size > 0) /*Start IF*/
+	i = 0;
+	j = 0;
+	if (size <= 0)
 	{
-		for (i = 0; i < size; i++) /*Print (_) n times*/
-		{
-
-			for (z = 0; z < size; z++) /*Start FOR*/
-			{
-				_putchar (35);
-			}
-			_putchar ('\n');
-
-		} /*END second FOR*/
-
-	} /*End IF*/
-
+		_putchar('\n');
+	}
 	else
 	{
-		_putchar ('\n');
+		while (i < size)
+		{
+			while (j < size)
+			{
+				_putchar('#');
+				j++;
+			}
+			j = 0;
+			_putchar('\n');
+			i++;
+		}
 	}
-
+	/* Copyright © 2022 baccrie */
 }

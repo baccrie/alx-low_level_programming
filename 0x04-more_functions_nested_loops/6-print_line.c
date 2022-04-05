@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_line - prints straight line
  * @n: parameter
@@ -8,23 +9,21 @@
 
 void print_line(int n)
 {
-	int count;
-	char c;
+	int i;
 
-	c = '_';
-	count = 1;
+	i = 0;
 	if (n <= 0)
 	{
-		_putchar('\n');
+		putchar('\n');
 	}
 	else
 	{
-		while (count <= n)
+		while (i < n)
 		{
-			_putchar(c);
-			count++;
+			putchar('_');
+			i++;
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 	/* Copyright © 2022 baccrie */
 }

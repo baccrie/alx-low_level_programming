@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * more_numbers - function prints 1 to 14
  * Copyright © 2022 baccrie
@@ -6,25 +7,23 @@
  */
 void more_numbers(void)
 {
+	int i;
+	int j;
 
-	int cycle = 0;
-	int num = 0;
-
-	while (cycle <= 9)
+	i = 0;
+	for (j = 1; j <= 10; j++)
 	{
-		while (num <= 14)
+		while (i <= 14)
 		{
-			if (num > 9)
+			if (i > 9)
 			{
-				_putchar(num / 10 + '0');
+				_putchar(i / 10 + '0');
 			}
-			_putchar(num % 10 + '0');
-			num++;
-
+			_putchar(i % 10 + '0');
+			i++;
 		}
-	_putchar('\n');
-	cycle++;
-	num = 0;
+		i = 0;
+		_putchar('\n');
 	}
 	/* Copyright © 2022 baccrie */
 }

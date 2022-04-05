@@ -3,6 +3,7 @@
  * print_most_numbers - print from 1 to 9
  * skipping 2 and 4
  * Return: void
+ * Copyright © 2022 baccrie
  */
 
 void print_most_numbers(void)

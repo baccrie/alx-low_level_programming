@@ -1,47 +1,33 @@
-#include <stdio.h>
-/**
- * main - entry point
- *
- * Return: void
- */
+#include "stdio.h"
 
-int main(void)
+int main()
 {
-
-	int n = 100; /*Delcaring statements*/
 	int i;
 
 	i = 1;
-	while (i <= n) /*Start While*/
+	while (i <= 100)
 	{
-		if (i % 3 == 0 && i % 5 == 0) /*Multple 3 and 5*/
+		if (i % 3 == 0)
 		{
-			printf("FizzBuzz ");
-		}
-
-		else if (i % 3 == 0) /*Muitple 3*/
-		{
-			printf("Fizz ");
-		}
-
-		else if (i % 5 == 0) /*Multple 5*/
-		{
-			if (i < n)
-			printf("Buzz ");
-
-			else
+			printf(" Fizz");
+			if (i % 5 == 0)
+			{
 				printf("Buzz");
+			}
 		}
-
+		else if (i % 5 == 0)
+		{
+			printf(" Buzz");
+		}
 		else
 		{
-			printf("%i ", i); /*Print i*/
+			if (i != 1)
+			{
+				printf(" ");
+			}
+			printf("%d", i);
 		}
-
 		i++;
-
-
 	}
-	printf("\n"); /*New line*/
-	return (0);
+	putchar('\n');
 }

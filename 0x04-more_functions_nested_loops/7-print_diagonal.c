@@ -1,34 +1,44 @@
 #include "main.h"
+
 /**
- * print_diagonal - prints diagonal line
- * @n: print int
- * Return: Always 0.
+ * print_diagonal - prints a diagonal line
+ * @n - no of times to print the diagonal
+ * Copyright © 2022 baccrie
+ * Return: 0 for success 1 for pass
  */
+
 void print_diagonal(int n)
 {
+	int i, j, k;
 
-/*Delcaring statements*/
-	int i;
-	int z;
-
-	if (n > 0)
+	i = 0;
+	j = 0;
+	k = 1;
+	if (n <= 0)
 	{
-		for (i = 0; i < n; i++) /*Print (_) n times*/
-		{
-			for (z = 0; z < i ; z++) /*Print (_) * Second IF*/
-			{
-				_putchar (' ');
-			} /*End second IF*/
-			_putchar (92);
-			_putchar ('\n'); /*New line*/
-
-		}
-
+		_putchar('\n');
 	}
-
 	else
 	{
-		_putchar ('\n');
+		while (i < n)
+		{
+			while (j < k && k <= n)
+			{
+				if (j != (k - 1))
+				{
+					_putchar(' ');
+				}
+				if (j == (k - 1))
+				{
+					_putchar('\\');
+				}
+				j++;
+			}
+			_putchar('\n');
+			i++;
+			k++;
+			j = 0;
+		}
 	}
-
+	/* Copyright © 2022 baccrie */
 }
