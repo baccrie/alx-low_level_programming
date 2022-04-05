@@ -1,57 +1,43 @@
-#include "stdio.h"
+#include "main.h"
+
 /**
- * print_square - prints a square
- * @size: length and breadth of square
+ * print_triangle - prints triangle with # sign
+ * @size: base and height of triangle
  * Return: 0 for size <= 0 else 1
  * Copyright © 2022 baccrie
  */
 
 void print_triangle(int size)
 {
-	int i;
-	int j;
-	int k;
-	int p;
+	int i, j, k;
 
 	i = 0;
-	j = 0;
-	p = 0;
 	k = size - 1;
-	if (size <= 0)
-	{
-		putchar('\n');
-	}
-	else
+	if (size > 0)
 	{
 		while (i < size)
 		{
+			j = 0;
 			while (j < size)
 			{
-				if (p < k)
+				if (j < k)
 				{
-					putchar('a');
+					_putchar(' ');
 				}
-				if (p >= k)
+				else
 				{
-					putchar('#');
+					_putchar('#');
 				}
-				p++;
-				k--;
 				j++;
 			}
-			j = 0;
-			putchar('\n');
+			k--;
 			i++;
+			_putchar('\n');
 		}
 	}
+	else
+	{
+		_putchar('\n');
+	}
 	/* Copyright © 2022 baccrie */
-}
-
-int main(void)
-{
-    print_triangle(2);
-    print_triangle(10);
-    print_triangle(1);
-    print_triangle(0);
-    return (0);
 }

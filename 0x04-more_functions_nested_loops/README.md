@@ -33,7 +33,7 @@ A program that prints the numbers from 1 to 100, followed by a new line. But 
 ###	10-print_triangle.c
 Write a function that prints a triangle, followed by a new line.
 
-##      Mandatory Tasks files and what they do
+##      Advanced Tasks files and what they do
 ###	100-prime_factor.c
 Aprogram that finds and prints the largest prime factor of the number 612852475143, followed by a new line.
 
