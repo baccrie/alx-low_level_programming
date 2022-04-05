@@ -1,8 +1,9 @@
-#include "stdio.h"
+#include "main.h"
+
 /**
  * print_square - prints a square
  * @size: length and breadth of square
- * Return: 0 for size <= 0 else 1
+ * Return: void
  * Copyright © 2022 baccrie
  */
 
