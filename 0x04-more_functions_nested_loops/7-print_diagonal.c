@@ -2,9 +2,9 @@
 
 /**
  * print_diagonal - prints a diagonal line
- * @n - no of times to print the diagonal
+ * @n: no of times to print the diagonal
  * Copyright © 2022 baccrie
- * Return: 0 for success 1 for pass
+ * Return: 0 for fail 1 for success
  */
 
 void print_diagonal(int n)
