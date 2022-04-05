@@ -7,7 +7,7 @@
  * Copyright © 2022 baccrie
  */
 
-int main()
+int main(void)
 {
 	int i;
 
