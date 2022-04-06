@@ -11,7 +11,8 @@
 void rev_string(char *s)
 {
 	/* Declaring pointers and variables */
-	/* The two pointers will move to the start and end of the strimg stored inside *s */
+	/* The two pointers will move to the start and end*/
+	/* of the strimg stored inside *s */
 
 	char *ptr_start, *ptr_end, tmp;
 	int i, j, len;
