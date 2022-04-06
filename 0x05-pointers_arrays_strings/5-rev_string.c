@@ -1,5 +1,6 @@
-//include "main.h"
+#include "main.h"
 #include <stdio.h>
+
 /**
  * rev_string - prints a string in reverse mode
  * @s: A pointer to an int
@@ -9,33 +10,38 @@
 
 void rev_string(char *s)
 {
-	int i, len, j;
+	/* Declaring pointers and variables */
+	/* The two pointers will move to the start and end of the strimg stored inside *s */
+
+	char *ptr_start, *ptr_end, tmp;
+	int i, j, len;
 
 	i = 0;
+	ptr_start = s;
+	ptr_end = s;
+	/*.Counting characters where *s is pointing */
 	while (s[i])
 	{
 		i++;
 	}
-
-	char *p = s;
-	char *q;
+	len = i - 1;
 	j = 0;
-	while (p[j])
+	/* Moving ptr_end to the end of the block */
+	while (j < len)
 	{
-		q[j] = s[i];
-		i--;
+		ptr_end++;
 		j++;
 	}
-	s = q;
+	/* Exchanging values from front and back and*/
+	/* Moving the pointers to the middle of the block simultaneously */
+	for (i = 0; i < (len + 1) / 2; i++)
+	{
+		tmp = *ptr_start;
+		*ptr_start = *ptr_end;
+		*ptr_end = tmp;
+
+		ptr_start++;
+		ptr_end--;
+	}
 	/* Copyright © 2022 baccrie */
-}
-
-int main(void)
-{
-    char s[10] = "My School";
-
-    printf("%s\n", s);
-    rev_string(s);
-    printf("%s\n", s);
-    return (0);
 }

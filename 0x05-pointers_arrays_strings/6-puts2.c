@@ -3,10 +3,10 @@
 
 /**
  * puts2 - prints every other character of a string,
- * @str: A pointer to an integer
+ * @str: A pointer to a set of character;
  * Task 6.Half the lies they tell about me
  * aren't true
- * Cooyright © 2022 baccrie
+ * Copyright © 2022 baccrie
  * Return: void
  */
 

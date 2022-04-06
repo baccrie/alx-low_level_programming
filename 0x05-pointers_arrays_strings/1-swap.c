@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
  * swap_int - (Task 1)unction that swaps the values of two integers.
  * @a: - an int

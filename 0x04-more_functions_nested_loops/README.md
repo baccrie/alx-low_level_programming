@@ -40,7 +40,9 @@ Aprogram that finds and prints the largest prime factor of the number 612852475
 ###	101-print_number.c
 A  function that prints an integer.
 
-his repository contains my clanguage projects at Alx Holberton School of software Engineering.
+
+
+This repository contains my clanguage projects at Alx Holberton School of software Engineering.
 no part of this project should be reproduced or copied without prior knowledge of the rightful owner
 
 copyright baccrie  © 2022 alx Africa

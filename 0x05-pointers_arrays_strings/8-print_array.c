@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * print_array - prints n elements of an array of integers
- * @a: A pointer to an integer
- * @n: return value
+ * @a: A pointer to a character string
+ * @n: length of character string
  * Copyright © 2022 baccrie
  * Return: void
  */
