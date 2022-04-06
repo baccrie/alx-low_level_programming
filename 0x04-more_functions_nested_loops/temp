@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+/**
+ * main - Entry
+ * Task 11 Prime factors
+ * Return: void
+ * Copyright © 2022 baccrie
+ */
+
+int main(void)
+{
+	long int i = 612852475143;
+	long int n = i - 1;
+	long int prime = 0;
+
+	while (n > 0)
+	{
+		if (i % n == 0)
+		{
+			prime = n;
+			break;
+		}
+		n--;
+	}
+	printf("%ld\n", prime);
+	return (0);
+	/*.Copyright © 2022 baccrie */
+}
