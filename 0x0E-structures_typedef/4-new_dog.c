@@ -10,11 +10,11 @@
  * Description:
  */
 
-dog_t *new_dog(dog_t new char *name, float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
-	new.name = name;
-	new.age = age;
-	new.owner = owner;
-
-	return (new)
+	dog_t *new;
+	new->name = name;
+	new->age = age;
+	new->owner = owner;
+	return (new);
 }
