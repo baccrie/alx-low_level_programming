@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**
  * struct dog - 0.Poppy
  * @name: memeber thats holds name
@@ -11,7 +9,7 @@
 struct dog
 {
 	char *name;
-	float *age;
+	float age;
 	char *owner;
 	/* Copyright © 2022 baccrie */
-}
+};
