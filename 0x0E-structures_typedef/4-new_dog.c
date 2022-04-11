@@ -3,11 +3,12 @@
 #include "stdlib.h"
 
 /**
- * new_dog -
- * @name:
- * @age:
- * @owner:
- * Description:
+ * new_dog - Function thats give birth to new dog
+ * @name: a member of dog 
+ * @age: a member of dog struct
+ * @owner: a member of dog struct
+ * Description: later
+ * Return: dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
