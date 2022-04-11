@@ -1,12 +1,12 @@
 #include "dog.h"
 
 /**
- * init_dog - 
- * @d:
- * @name:
- * @age:
- * @owner:
- * Description:
+ * init_dog - a function
+ * @d: a struct variable
+ * @name: a member
+ * @age: member
+ * @owner: member
+ * Description: will update later
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
