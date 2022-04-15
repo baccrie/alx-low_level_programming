@@ -11,7 +11,7 @@ int main(void)
 {
 	/* Declaring the variables using unsigned long because */
 	/* it has more memory and can accommodate the big fibonnaci numbers */
-	unsigned long sum, sum1, sum2;
+	unsigned long long sum, sum1, sum2;
 	short int count;
 
 	sum2 = 1;
@@ -20,7 +20,7 @@ int main(void)
 	while (count <= 95)
 	{
 		sum = sum1 + sum2;
-		printf("%lu", sum);
+		printf("%llu", sum);
 		if (count != 95)
 		{
 			printf(", ");
