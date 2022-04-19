@@ -1,21 +1,31 @@
 #include "stdio.h"
 
-int test()
+char *string_toupper(char *str)
 {
-	char p = 'q';
-	char q = 'a';
+	int diff;
+	diff = 'p' - 'P';
+	int i = 0;
 
-	return (p - q);
-}
-
-int main ()
-{
-	int a[8] = {1, 3, 5, 7, 9, 23, 65, 89};
-	int *b = a;
-	int *c = b;
-
-	while (*b)
+	while (*(str + i))
 	{
-		printf("%d, ", *b++);
+		if (str[i] <= 'z' && str[i] >= 'a')
+		{
+
+			*(str + i) -= diff;
+		}
+		i++;
 	}
+	return (str);
 }
+
+int main(void)
+{
+    char str[] = "Look up!\n";
+    char *ptr;
+
+    ptr = string_toupper(str);
+    printf("%s", ptr);
+    printf("%s", str);
+    return (0);
+}
+

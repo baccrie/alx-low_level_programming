@@ -1,11 +1,12 @@
 #include "main.h"
+
 /**
- * _strncpy -  a function that copies a string
- * @dest: A pointer to an char that will be updated
- * @src: A pointer to an char that will be updated
- * @n: value
- * Copyright © 2022 baccrie
+ * _strncpy
+ * @dest - destination
+ * @src - source
+ * @n - no of byte to copy
  * Return: dest
+ * Copyright © 2022 baccrie
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -13,14 +14,14 @@ char *_strncpy(char *dest, char *src, int n)
 	int i;
 
 	i = 0;
-	while (i < n && src[i] != '\0')
+	while (i < n && *(src + i))
 	{
-		dest[i] = src[i];
+		*(dest + i) = *(src + i);
 		i++;
 	}
 	while (i < n)
 	{
-		dest[i] = '\0';
+		*(dest + i)  = '\0';
 		i++;
 	}
 	return (dest);
