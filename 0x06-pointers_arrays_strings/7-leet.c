@@ -19,7 +19,7 @@ char *leet(char *enc)
 	while (*(enc + i))
 	{
 		j = 0;
-		while(*(cha + j))
+		while (*(cha + j))
 		{
 			if (enc[i] == cha[j])
 			{
