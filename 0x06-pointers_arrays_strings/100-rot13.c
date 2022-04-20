@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * root13 - a function that encodes a string the acient Rome way
+ * rot13 - a function that encodes a string the acient Rome way
  * @ch: string to encode
  * Return: pointer to ch
  * Copyright © 2022 baccrie
