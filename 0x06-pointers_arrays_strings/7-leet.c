@@ -2,7 +2,7 @@
 
 /**
  * leet - a function that encodes a string
- * @enc - a pointer that stores string to encode
+ * @enc:  pointer that stores string to encode
  * Return: a pointer to the string
  * Cooyright © 2022 baccrie
  */
