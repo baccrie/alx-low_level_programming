@@ -64,4 +64,5 @@ char *cap_string(char *str)
 		i++;
 	}
 	return (str);
+	/* Copyright © 2022 baccrie */
 }

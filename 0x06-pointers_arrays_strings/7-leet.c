@@ -30,4 +30,5 @@ char *leet(char *enc)
 		i++;
 	}
 	return (enc);
+	/* Copyright © 2022 baccrie */
 }

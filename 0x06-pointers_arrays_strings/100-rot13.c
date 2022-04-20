@@ -30,5 +30,5 @@ char *rot13(char *ch)
 		i++;
 	}
 	return (ch);
-	/*.Cooyright © 2022 baccrie */
+	/*.Copyright © 2022 baccrie */
 }

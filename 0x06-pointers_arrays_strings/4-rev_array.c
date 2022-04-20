@@ -1,13 +1,14 @@
-#include "stdio.h"
+#include "main.h"
+
 /**
  * reverse_array - reverses the content of an array of integers
  * @a: an array of integers
  * @n: number of elements of the array
  * Return: returns void
+ * Copyright © 2022 baccrie
  */
 
 void reverse_array(int *a, int n)
-
 {
 	int *ptr_start, *ptr_end, i, tmp, len;
 
@@ -33,4 +34,5 @@ void reverse_array(int *a, int n)
 		ptr_end--;
 		i++;
 	}
+	/* Copyright baccrie © 2022 */
 }

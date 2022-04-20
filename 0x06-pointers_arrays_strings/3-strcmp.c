@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strcmp -  compares two strings
  * @s1: A pointer to a char
@@ -10,20 +11,13 @@
 int _strcmp(char *s1, char *s2)
 
 {
-	int diff;
+	int diff, i;
 
-	if (s1 == s2)
+	i = 0;
+	while (*(s1 + i) && *(s2 + i) && *(s1 + i) == *(s2 + i))
 	{
-		diff = 0;
+		i++;
 	}
-	else if ((*s1) == (*s2))
-	{
-		diff = 0;
-	}
-	else
-	{
-		diff = (*s1) - (*s2);
-	}
-	return (diff);
+	return (s1[i] - s2[i]);
 	/* Copyright © 2022 baccrie */
 }
