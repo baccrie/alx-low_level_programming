@@ -5,11 +5,10 @@
  * @s1: A pointer to a char
  * @s2: A pointer to a char
  * Return: dest
- * Copyright © 2022 baccrie	
+ * Copyright © 2022 baccrie
  */
 
 int _strcmp(char *s1, char *s2)
-
 {
 	int i;
 
