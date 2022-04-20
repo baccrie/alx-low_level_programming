@@ -10,7 +10,7 @@
 char *rot13(char *ch)
 {
 	int i, j;
-	char *input *output;
+	char *input, *output;
 
 	input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
