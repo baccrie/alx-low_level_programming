@@ -1,56 +1,68 @@
 #include "main.h"
 
 /**
- * separator - checks if character is a seperator
- * @c: character to be checked
- * Return: if seperator return 1. Otherwise return 0;
+ * checks - a function that checks for separator
+ * @sep: a separator
+ * Return: 1 if it encounters a separator else 0
+ * Copyright © 2022 baccrie
  */
 
-int separator(char c)
+int checks(char sep)
 {
-	switch (c)
+	switch (sep)
 	{
-	case ' ':
-	case '\t':
-	case '\n':
-	case ',':
-	case ';':
-	case '.':
-	case '!':
-	case '?':
-	case '"':
-	case '(':
-	case ')':
-	case '{':
-	case '}':
-		return (1);
-
-	default:
-		return (0);
-	}
-
+		case ',':
+		case ';':
+		case '!':
+		case '.':
+		case '?':
+		case '"':
+		case ')':
+		case '(':
+		case '{':
+		case '}':
+		case ' ':
+		case '\t':
+		case '\n':
+			return (1);
+		default:
+			return (0);
+	}	
 }
+
 /**
- * cap_string - capitalizes chars after given deliminators
- * @s: string to uppercase
- * Return: returns modified string
+ * cap_string - function that capitalises char after a separator
+ * @str: a pointer to the string
+ * Return: pointer to string
+ * Copyright © 2022 baccrie
  */
-char *cap_string(char *s)
+
+char *cap_string(char *str)
 {
-	int count, upper;
+	int i;
+	int diff;
+	
+	i = 0;
+	diff = 'b' - 'B';
 
-	upper = -32;
-
-	count = 0;
-	while (s[count] != '\0')
+	while (*(str + i))
 	{
-		if (s[count] >= 'a' && s[count] <= 'z')
+		if (*(str + i) <= 'z' && *(str + i) >= 'a')
 		{
-			if (s[count] == *s || separator(s[count - 1]))
-
-				s[count] += upper;
+			if (checks(*(str + i - 1)) || *(str + i) == *str)
+			{
+				*(str + i) -= diff;
+			}
+			else
+			{
+				str[i] = str[i];
+			}
 		}
-		count++;
+		else
+		{
+			str[i] = str[i];
+		}
+		i++;
 	}
-	return (s);
+	return (str);
 }
