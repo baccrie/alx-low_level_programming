@@ -27,7 +27,7 @@ int checks(char sep)
 			return (1);
 		default:
 			return (0);
-	}	
+	}
 }
 
 /**
@@ -41,10 +41,9 @@ char *cap_string(char *str)
 {
 	int i;
 	int diff;
-	
+
 	i = 0;
 	diff = 'b' - 'B';
-
 	while (*(str + i))
 	{
 		if (*(str + i) <= 'z' && *(str + i) >= 'a')
