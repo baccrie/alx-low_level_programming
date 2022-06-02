@@ -1,68 +1,29 @@
+#include "stdlib.h"
 #include "main.h"
-/**
- *_strlen - count arrray
- *@s: array of elements
- *Return: i
- */
-
-int _strlen(char *s)
-{
-	unsigned int i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-
-	return (i);
-}
 
 /**
- *_strcpy - copy arrays
- *@src: array of elements
- *@dest: dest array
- *Return: dest
- */
-
-char *_strcpy(char *dest, char *src)
-{
-	int i = 0;
-
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-
-	return (dest);
-}
-
-/**
- *_strdup - array for prints a string
- *@str: array of elements
- *Return: pointer
+ * _strdup - a function that returns a pointer to heap
+ * @str: a string passed
+ * Return: NULL or ptr
+ * Copyright © 2022 baccrie
  */
 
 char *_strdup(char *str)
 {
-	char *dst;
-	unsigned int size;
+	char *ptr;
+	int i;
 
-	if (str == 0)
+	i = 0;
+	if (str == NULL)
+		return NULL;
+	ptr = (char*)malloc(strlen(str));
+	if (ptr == NULL)
+		return NULL;
+	while (str[i])
 	{
-		return (NULL);
+		*(ptr + i) = *(str + i);
+		i++;
 	}
 
-	size = _strlen(str) + 1;
-
-	dst = (char *) malloc(size * sizeof(char));
-
-	if (dst == 0)
-	{
-		return (NULL);
-	}
-	_strcpy(dst, str);
-	return (dst);
+	return (ptr);
 }
