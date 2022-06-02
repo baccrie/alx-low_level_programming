@@ -5,6 +5,8 @@
  * create_array - create an array
  * @size: size of memo on heap
  * @c: character to equate
+ * Return: Null or ptr
+ * Copyright © 2022 baccrie
  */
 
 char *create_array(unsigned int size, char c)
