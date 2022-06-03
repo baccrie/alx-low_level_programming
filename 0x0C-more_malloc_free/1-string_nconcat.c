@@ -3,7 +3,6 @@
 #include "string.h"
 #include "main.h"
 
-
 /**
  * string_nconcat - a function that returns ptr to heap
  * @s1: first string
@@ -17,8 +16,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int i, j;
 	unsigned int k;
-
 	char *ptr;
+
+	i = j = 0;
 	if (ptr == NULL)
 		return (NULL);
 	if (s1 == NULL)
@@ -34,13 +34,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		k = n;
 	}
 	ptr = (char *)malloc(strlen(s1) + k);
-	i = 0;
 	while (s1[i])
 	{
 		ptr[i] = s1[i];
 		i++;
 	}
-	j = 0;
 	while (j <= k)
 	{
 		ptr[i] = s2[j];
