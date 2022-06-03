@@ -9,7 +9,7 @@
  * @s1: first string
  * @s2: second string
  * @n: first n bytes of s2
- * Returns: Null or ptr
+ * Return: Null or ptr
  * Copyright © 2022 baccrie
  */
 
