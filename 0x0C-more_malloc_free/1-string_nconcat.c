@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * string_nconcat - a function that returns ptr to heap
+ * string_nconcat - a function that returns ptr
  * @s1: first string
  * @s2: second string
  * @n: first n bytes of s2
@@ -14,13 +14,11 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, j;
-	unsigned int k;
+	int i;
+	unsigned int k, j;
 	char *ptr;
 
 	i = j = 0;
-	if (ptr == NULL)
-		return (NULL);
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
@@ -34,6 +32,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		k = n;
 	}
 	ptr = (char *)malloc(strlen(s1) + k);
+	if (ptr == NULL)
+		return (NULL);
 	while (s1[i])
 	{
 		ptr[i] = s1[i];
