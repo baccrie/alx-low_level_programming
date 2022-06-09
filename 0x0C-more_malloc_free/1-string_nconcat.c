@@ -18,11 +18,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	i = j = 0;
 	a = b = 0;
-	while (s1[a] != '\0')
+	while (s1[a])
 	{
 		a++;
 	}
-	while (s2[b] != '\0')
+	while (s2[b])
 	{
 		b++;
 	}
@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	if (n >= b)
+	if (n > b)
 		n = b;
 	ptr = (char *)malloc(a + n + 1);
 	if (ptr == NULL)
