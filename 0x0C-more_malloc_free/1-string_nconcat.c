@@ -12,12 +12,13 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int sum = n;
+	unsigned int sum;
 	char *ptr;
 	int i, j;
-	int a, b;
+	unsigned int a, b;
 
 	i = j = a = b = 0;
+	sum = n;
 	while (s1[a])
 	{
 		a++;
