@@ -18,11 +18,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	i = j = 0;
 	a = b = 0;
-	while (s1[a])
+	while (s1[a] != '\0')
 	{
 		a++;
 	}
-	while (s2[b])
+	while (s2[b] != '\0')
 	{
 		b++;
 	}
