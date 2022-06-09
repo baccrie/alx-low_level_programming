@@ -1,31 +1,43 @@
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
 #include "main.h"
-#include <stdlib.h>
+
 /**
- * _realloc - reallocates a memory block.
- * @ptr: pointer to the memory previously allocated.
- * @old_size: size, in bytes, of the allocated space of ptr.
- * @new_size: new size, in bytes, of the new memory block.
- *
- * Return: ptr.
- * if new_size == old_size, returns ptr without changes.
- * if malloc fails, returns NULL.
+ * string_nconcat - later
+ * @s1: first strimg
+ * @s2: second string
+ * @n: integer
+ * Return: ptr
  */
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	if (new_size == 0 && ptr != NULL)
-	{
-		free(ptr);
-		return (NULL);
-	}
+	unsigned int sum = n;
+	char *ptr;
+	int i, j;
 
+	i = j = 0;
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	if (n >= strlen(s2))
+		sum = strlen(s2);
+	ptr = (char *)malloc(strlen(s1) + sum + 1);
 	if (ptr == NULL)
-		ptr = malloc(new_size);
-
-	if (new_size == old_size)
-		return (ptr);
-
-	free(ptr);
-	ptr = malloc(new_size);
-
+		return (NULL);
+        while (s1[i])
+	{
+		ptr[i] = s1[i];
+		i++;
+	}
+	while (s2[j])
+	{
+		ptr[i] = s2[j];
+		i++;
+		j++;
+	}
+	ptr[i] = '\0';
 	return (ptr);
 }
