@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc *.o -fPIC -shared -o libruin.so
-LD_PRELOAD=$PWD/libruin.so
+wget -P /tmp libmask.so
+export LD_PRELOAD=/tmp/libmask.so
