@@ -1,83 +1,50 @@
-#include <stdlib.h>
 #include "dog.h"
+#include "stdlib.h"
 
 /**
- * _copy  -   Make a copy of passed in argument
- * @src:      Data to make copy of
- * Return:    Pointer
- */
-
-char *_copy(char *src)
-{
-	char *ptr;
-	int i, len;
-
-	if (src == NULL)
-	{
-		return (NULL);
-	}
-
-	for (len = 0; src[len] != '\0'; len++)
-		;
-
-	ptr = malloc(sizeof(char) * (len + 1));
-
-	if (ptr == NULL)
-	{
-		return (NULL);
-	}
-
-	for (i = 0; src[i] != '\0'; i++)
-	{
-		ptr[i] = src[i];
-	}
-
-	ptr[i] = '\0';
-	return (ptr);
-}
-
-/**
- * new_dog     - Create a new dog variable
- * @name:        Name of the dog
- * @age:         Age of the dog
- * @owner:       Owner of the dog
- * Return:       Pointer to new dog variable
+ * new_dog - A new dog
+ * @name: name of dog
+ * @age: dog's age
+ * @owner: owner of dog
+ * Return: ptr to dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *snoopie;
-	char *new_name, *new_owner;
+	dog_t *ptr;
+	int i, j, k, l;
 
-	if (name == NULL || owner == NULL)
-	{
+	i = j = k = l = 0;
+	if (ptr == NULL || name == NULL || owner == NULL)
 		return (NULL);
-	}
-
-	snoopie = malloc(sizeof(dog_t));
-	if (snoopie == NULL)
-	{
+	ptr = malloc(sizeof(dog_t));
+	if (ptr == NULL)
 		return (NULL);
-	}
+	while (name[i])
+		i++;
+	while (owner[j])
+		j++;
 
-	new_name = _copy(name);
-	if (new_name == NULL)
+	ptr->name = malloc(sizeof(char) * i + 1);
+	ptr->owner = malloc(sizeof(char) * j + 1);
+
+	while (name[k])
 	{
-		free(snoopie);
-		return (NULL);
+		ptr->name[k] = name[k];
+		k++;
 	}
-	(*snoopie).name = new_name;
+	ptr->name[k] = '\0';
+	ptr->age = age;
 
-	(*snoopie).age = age;
-
-	new_owner = _copy(owner);
-	if (new_owner == NULL)
+	while (owner[k])
 	{
-		free((*snoopie).name);
-		free(snoopie);
-		return (NULL);
+		ptr->owner[l] = owner[l];
+		l++;
 	}
-	(*snoopie).owner = new_owner;
+	ptr->owner[l] = '\0';
 
-	return (snoopie);
+	free(ptr->owner);
+	free(ptr->name);
+
+	return (ptr);
 }
