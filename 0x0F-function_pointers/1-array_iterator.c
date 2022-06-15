@@ -6,7 +6,8 @@
  *@array: array
  *@size: size of the array
  *@action:callback function
- * Description: function that prints a name
+ * Return: nothing
+ * Copyright © 2022 baccrie
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
@@ -16,11 +17,11 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	size_t i;
 
 	if (array != NULL && action != NULL)
-
-	for (i = 0; i < size; i++)
 	{
-		action(*array);
-		array++;
+		while (i < size)
+		{
+			(*action)(array[i]);
+			i++;
+		}
 	}
-
 }
