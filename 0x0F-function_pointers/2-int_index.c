@@ -6,6 +6,7 @@
  *@array: array
  *@size: size of the array
  *@cmp:callback function
+ *Copyright © 2022 baccrie
  * Return: no element matches -1
  **/
 
@@ -13,24 +14,18 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 {
 	int i;
-	int count;
 
-	if (array != NULL && cmp != NULL)
+	i = 0;
+	if (size < 0)
+		return (-1);
+	while (i < size)
 	{
-
-		i = 1;
-		while (i <= size)
+		if ((*cmp)(array[i]))
 		{
-			count = cmp(array[i]);
-			if (count != 0)
-			{
-				return (i);
-			}
-
-			i++;
+			return (i);
 		}
-
+		i++;
 	}
-	return (-1);
 
+	return (-1);
 }
