@@ -15,7 +15,7 @@ void free_list(list_t *head)
 	tmp = head;
 
 	if (head == NULL)
-		return (void);
+		return;
 	while (tmp->next != NULL)
 	{
 		tmp1 = tmp->next;
@@ -24,5 +24,5 @@ void free_list(list_t *head)
 		tmp = tmp1;
 	}
 
-	return (void);
+	return;
 }
