@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <main.h>
+#include <list.h>
 
 /**
  * free_list - a function that frees list
