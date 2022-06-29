@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <lists.h>
 
 /**
@@ -23,6 +21,7 @@ void free_list(list_t *head)
 		free(tmp);
 		tmp = tmp1;
 	}
-
-	return;
+	free(head);
+	free(tmp);
+	free(tmp1);
 }
