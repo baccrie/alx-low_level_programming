@@ -1,25 +1,28 @@
-#include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <main.h>
+
 /**
- * free_list -  free a list
- * @head: pointer
+ * free_list - a function that frees list
+ * @head: a head pointer to first node
  * Return: void
+ * Copyright © baccrie 2022
  */
 
 void free_list(list_t *head)
 {
-	list_t *temp;
+	list_t *tmp, *tmp1;
+	tmp = head;
 
 	if (head == NULL)
-		return;
-
-	while (head->next != NULL)
+		return (void);
+	while (tmp->next != NULL)
 	{
-		temp = head->next;
-		free(head->str);
-		free(head);
-		head = temp;
+		tmp1 = tmp->next;
+		free(tmp->str);
+		free(tmp);
+		tmp = tmp1;
 	}
 
-	free(head->str);
-	free(head);
+	return (void);
 }
