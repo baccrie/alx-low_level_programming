@@ -48,38 +48,26 @@ size_t print_list(const list_t *h)
 	return (size);
 }
 
+
+
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * list_len - function that counts nodes
+ * @h: pointer to first node
+ * Return: no of nodes
  */
-int main(void)
+
+size_t list_len(const list_t *h)
 {
-    list_t *head;
-    list_t *new;
-    list_t hello = {"World", 5, NULL};
-    size_t n;
+	size_t size;
+	const list_t *tmp;
 
-    head = &hello;
-    new = malloc(sizeof(list_t));
-    if (new == NULL)
-    {
-        printf("Error\n");
-        return (1);
-    }
-    new->str = strdup("Hello");
-    new->len = 5;
-    new->next = head;
-    head = new;
-    n = print_list(head);
-    printf("-> %lu elements\n", n);
+	tmp = h;
+	size = 0;
+	while (tmp != NULL)
+	{
+		size++;
+		tmp = tmp->next;
+	}
 
-    printf("\n");
-    free(new->str);
-    new->str = NULL;
-    n = print_list(head);
-    printf("-> %lu elements\n", n);
-
-    free(new);
-    return (0);
+	return (size);
 }
