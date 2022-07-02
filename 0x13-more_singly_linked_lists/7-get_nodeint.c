@@ -12,7 +12,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	if (head == NULL)
 		return (NULL);
 	no = listint_len(head);
-	if (++index > no)
+	if ((index + 1) > no)
 		return (NULL);
 	while (i <= index)
 	{
