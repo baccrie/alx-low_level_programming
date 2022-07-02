@@ -1,6 +1,14 @@
 #include "stdio.h"
 #include "lists.h"
 
+/**
+ * get_nodeint_at_index - get
+ * @head: ori
+ * @index: melo melo
+ * Return: da pointer paada
+ */
+
+
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int i;
