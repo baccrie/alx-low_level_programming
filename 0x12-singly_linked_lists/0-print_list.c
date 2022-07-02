@@ -23,6 +23,5 @@ size_t print_list(const list_t *h)
 		size++;
 		tmp = tmp->next;
 	}
-
 	return (size);
 }
