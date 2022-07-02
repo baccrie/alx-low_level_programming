@@ -6,9 +6,8 @@
 /**
  * free_list - a function that frees list
  * @head: pointer to first node
- * Return: pointer to node
+ * Return: void
  */
-
 
 void free_list(list_t *head)
 {
@@ -24,9 +23,7 @@ void free_list(list_t *head)
 		free(head);
 		head = tmp;
 	}
-
 	free(head->str);
 	free(head);
-
 	return;
 }
