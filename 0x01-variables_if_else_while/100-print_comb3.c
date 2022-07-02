@@ -1,38 +1,31 @@
-#include <stdio.h>
+#include "stdio.h"
+
 /**
- * main - Entry point
- * Task 10. Inventing is a combination
- * of brains and materials.
- * The more brains you use,
- * the less material you need
- * Copyright © 2022 baccrie
- *
- * Return: Always 0 (Success)
+ * main - Enter Trabaye
+ * Return: Owo Baba ijebu Dapada
  */
 
 int main(void)
 {
-	/* Declaring variable for the for loops*/
-	int left;
-	int right;
+	int left, right;
 
-	/* Outer loop */
-	for (left = 48; left < 57; left++)
+	left = 48;
+	while (left <= 56)
 	{
-		/* inner loop */
-		for (right = left + 1; right < 58; ++right)
+		right = left + 1;
+		while (right <= 57)
 		{
 			putchar(left);
 			putchar(right);
 			if (left == 56 && right == 57)
-			{
 				break;
-			}
 			putchar(',');
 			putchar(' ');
+			right++;
 		}
+		left++;
 	}
 	putchar('\n');
 	return (0);
-	/* Copyright © 2022 */
 }
+
