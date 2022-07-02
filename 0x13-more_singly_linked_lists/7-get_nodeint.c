@@ -19,7 +19,8 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	i = 0;
 	if (head == NULL)
 		return (NULL);
-	no = listint_len(head);
+	//no = listint_len(head);
+	no = 10;
 	if ((index + 1) > no)
 		return (NULL);
 	while (i <= index)
