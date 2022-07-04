@@ -33,6 +33,8 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		size++;
 		tmp = tmp->next;
 	}
+	if (index > size)
+		return (NULL);
 	tmp = head;
 	while (i < index)
 	{
