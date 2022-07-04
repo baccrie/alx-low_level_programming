@@ -2,56 +2,34 @@
 #include "lists.h"
 
 /**
- * listint_len - ccount nodes
- * @h: list head
- * Return: no of nodes
+ * get_nodeint_at_index - A function
+ * @head: A double pointer to head
+ * @index: position nth
+ * Return: tmp or NULL
+ * Copyright © 2022 baccrie
  */
 
-size_t listint_len(const listint_t *h)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	size_t size;
-	const listint_t *tmp;
+	listint_t *tmp;
+	unsigned int i, size;
 
-	tmp = h;
+	tmp = head;
+	i = 0;
 	size = 0;
-	while (tmp != NULL)
+	while (tmp->next != NULL)
 	{
 		size++;
 		tmp = tmp->next;
 	}
-	return (size);
-}
-
-
-/**
- * get_nodeint_at_index - get
- * @head: ori
- * @index: melo melo
- * Return: da pointer paada
- */
-
-
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
-{
-	unsigned int i;
-	size_t no;
-	listint_t *tmp;
-
-	i = 0;
-	no = listint_len(head);
 	tmp = head;
-
-	if (head == NULL)
-		return (head);
-	if (index < 0)
+	if (index > size || size < 0)
 		return (NULL);
-	if (index > (no + 1))
-		return (NULL);
-	while (i < index)
+	while (i< index)
 	{
-		i++;
 		tmp = tmp->next;
+		i++;
 	}
 
 	return (tmp);
-}
+}	
