@@ -11,7 +11,8 @@ int main(void)
 {
 	/* Declaring the variables using unsigned long because */
 	/* it has more memory and can accommodate the big fibonnaci numbers */
-	unsigned long int first, second, i, third;
+	unsigned long int first, second, third;
+	int i = 0;
 
 	first = 0;
 	second = 1;
