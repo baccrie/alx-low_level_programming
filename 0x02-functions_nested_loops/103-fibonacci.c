@@ -15,6 +15,7 @@ int main(void)
 	second = 1;
 	i = 0;
 	third = 0;
+	sum = 0;
 	while (third < 4000000)
 	{
 		third = first + second;
