@@ -28,5 +28,6 @@ int main(void)
 		second = third;
 		i++;
 	}
-	return (void);
+
+	return;
 }
