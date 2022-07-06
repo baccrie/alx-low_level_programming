@@ -11,25 +11,21 @@ int main(void)
 {
 	/* Declaring the variables using unsigned long because */
 	/* it has more memory and can accommodate the big fibonnaci numbers */
-	unsigned long int sum, sum1, sum2;
-	int count;
+	unsigned long int first, second, i, third;
 
-	sum2 = 1;
-	sum1 = 2;
-	printf("%lu, %lu, ", sum2, sum1);
-	while (count <= 47)
+	first = 0;
+	second = 1;
+	i = 0;
+	while (i < 50)
 	{
-		sum = sum1 + sum2;
-		printf("%lu", sum);
-		if (count != 47)
-		{
-			printf(", ");
-		}
-		sum2 = sum1;
-		sum1 = sum;
-		count++;
+		third = first + second;
+		if (i < 49)
+			printf("%lu, ", third);
+		else
+			printf("%lu\n", third);
+		first = second;
+		second = third;
+		i++;
 	}
-	putchar('\n');
-	return (0);
-	/*.Copyright © baccrie 2022 */
+
 }

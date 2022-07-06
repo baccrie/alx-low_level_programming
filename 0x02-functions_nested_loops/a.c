@@ -2,25 +2,21 @@
 
 int main(void)
 {
-	int i = 0;
-	int j = 0;
-	int ans = 1;
+	unsigned long int first, second, i, third;
 
-	while (i < 10)
+	first = 0;
+	second = 1;
+	i = 0;
+	while (i < 50)
 	{
-		j = 0;
-		while (j < 10)
-		{
-			ans = i * j;
-			if (j != 0)
-				printf("%3d", ans);
-			else
-				printf("%d", ans);
-			if (j != 9)
-				printf(",");
-			j++;
-		}
-		putchar('\n');
+		third = first + second;
+		if (i < 49)
+			printf("%lu, ", third);
+		else
+			printf("%lu\n", third);
+		first = second;
+		second = third;
 		i++;
 	}
+
 }
