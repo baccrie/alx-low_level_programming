@@ -17,11 +17,11 @@ void print_times_table(int n)
 
 	i = j = 0;
 	ans = 1;
+	if (n > 15 || n < 0)
+		return;
 	while (i <= n)
 	{
 		j = 0;
-		if (n > 15 || n < 0)
-			return;
 		while (j <= n)
 		{
 			ans = i * j;
