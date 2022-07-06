@@ -11,43 +11,22 @@
 
 void jack_bauer(void)
 {
-	int first, second, third, fourth;
-	/* Declaring variables for all the positions */
+	int i, j;
 
-	/* Nesting of 4 while loops*/
-	/* Study the loops carefully to understand how */
-	/* 00:00 => 23:59 is printed */
-	first = 0;
-	while (first <= 2)
+	i = j = 0;
+	while (i < 24)
 	{
-		second = 0;
-		while (second <= 9)
+		j = 0;
+		while (j < 60)
 		{
-			third = 0;
-			while (third <= 5)
-			{
-				fourth = 0;
-				while (fourth <= 9)
-				{
-					_putchar(first + '0');
-					_putchar(second + '0');
-					_putchar(':');
-					_putchar(third + '0');
-					_putchar(fourth + '0');
-					_putchar('\n');
-					fourth++;
-				}
-				third++;
-			}
-			second++;
-			if (first == 2 && second == 4)
-			{
-				/* The if condition checks if time is 24:00 */
-				/* And breaks out of the loop */
-				break;
-			}
+			_putchar(i / 10 + '0');
+			_putchar(i + '0');
+			_putchar(':');
+			_putchar(j / 10 + '0');
+			_putchar(j + '0');
+			_putchar('\n');
+			j++;
 		}
-		first++;
+		i++;
 	}
-	/* copyright © 2022 baccrie */
 }
