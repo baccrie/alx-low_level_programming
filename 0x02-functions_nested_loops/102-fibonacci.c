@@ -29,5 +29,5 @@ int main(void)
 		i++;
 	}
 
-	return;
+	return (0);
 }
