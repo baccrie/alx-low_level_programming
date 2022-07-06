@@ -2,22 +2,25 @@
 
 int main(void)
 {
-	int i, j;
+	int i = 0;
+	int j = 0;
+	int ans = 1;
 
-	i = j = 0;
-	while (i < 24)
+	while (i < 10)
 	{
 		j = 0;
-		while (j < 60)
+		while (j < 10)
 		{
-			putchar(i / 10 + '0');
-			putchar(i + '0');
-			putchar(':');
-			putchar(j / 10 + '0');
-			putchar(j + '0');
-			putchar('\n');
+			ans = i * j;
+			if (j != 0)
+				printf("%3d", ans);
+			else
+				printf("%d", ans);
+			if (j != 9)
+				printf(",");
 			j++;
 		}
+		putchar('\n');
 		i++;
 	}
 }

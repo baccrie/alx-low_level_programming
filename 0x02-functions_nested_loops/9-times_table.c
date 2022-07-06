@@ -8,44 +8,25 @@
 
 void times_table(void)
 {
-	int n;
-	int cycle;
+	int i, j, ans;
 
-	cycle = 0;
-	while (cycle <= 9)
+	i = j = 0;
+	ans = 1;
+	while (i < 10)
 	{
-		n = 0;
-		while (n <= 9)
+		j = 0;
+		while (j < 10)
 		{
-			printf("%d", cycle * n);
-			if (n != 9)
-			{
-				putchar(',');
-				putchar(' ');
-				if ((cycle == 0 || cycle == 1) || (cycle == 2 && n < 4))
-				{
-					putchar(' ');
-				}
-				else if ((cycle == 3 && n < 3) || (cycle == 4 && n < 2))
-				{
-					putchar(' ');
-				}
-				else if (cycle == 5 && n < 1)
-				{
-					putchar(' ');
-				}
-				else if ((cycle == 6 && n < 1) || (cycle == 7 && n < 1))
-				{
-					putchar(' ');
-				}
-				else if ((cycle == 8 && n < 1) || (cycle == 9 && n < 1))
-				{
-					putchar(' ');
-				}
-			}
-			n++;
+			ans = i * j;
+			if (j != 0)
+				printf("%3d", ans);
+			else
+				printf("%d", ans);
+			if (j != 9)
+				printf(",");
+			j++;
 		}
 		putchar('\n');
-		cycle++;
+		i++;
 	}
 }
