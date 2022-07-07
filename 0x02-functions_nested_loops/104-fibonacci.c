@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the first 50 Fibonacci numb
+ * main - prints the first 98 Fibonacci numb
  * ers, starting with 1 and 2
  * followed by a new line
  * Copyright © 2022 baccrie
@@ -11,25 +11,23 @@ int main(void)
 {
 	/* Declaring the variables using unsigned long because */
 	/* it has more memory and can accommodate the big fibonnaci numbers */
-	unsigned long sum, sum1, sum2;
-	short int count;
+	unsigned long int first, second, third;
+	int i = 0;
 
-	sum2 = 1;
-	sum1 = 2;
-	printf("%lu, %lu, ", sum2, sum1);
-	while (count <= 95)
+	first = 0;
+	second = 1;
+	i = 0;
+	while (i < 99)
 	{
-		sum = sum1 + sum2;
-		printf("%lu", sum);
-		if (count != 95)
-		{
-			printf(", ");
-		}
-		sum2 = sum1;
-		sum1 = sum;
-		count++;
+		third = first + second;
+		if (i < 98)
+			printf("%lu, ", third);
+		else
+			printf("%lu\n", third);
+		first = second;
+		second = third;
+		i++;
 	}
-	putchar('\n');
+
 	return (0);
-	/*.Copyright © baccrie 2022 */
 }
