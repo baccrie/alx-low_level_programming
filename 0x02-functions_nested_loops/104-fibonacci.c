@@ -17,10 +17,10 @@ int main(void)
 	first = 0;
 	second = 1;
 	i = 0;
-	while (i < 99)
+	while (i < 98)
 	{
 		third = first + second;
-		if (i < 98)
+		if (i < 97)
 			printf("%lu, ", third);
 		else
 			printf("%lu\n", third);
