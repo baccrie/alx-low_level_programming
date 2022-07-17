@@ -1,34 +1,5 @@
 #include "main.h"
-
-/**
- * checks - a function that checks for separator
- * @sep: a separator
- * Return: 1 if it encounters a separator else 0
- * Copyright © 2022 baccrie
- */
-
-int checks(char sep)
-{
-	switch (sep)
-	{
-		case ',':
-		case ';':
-		case '!':
-		case '.':
-		case '?':
-		case '"':
-		case ')':
-		case '(':
-		case '{':
-		case '}':
-		case ' ':
-		case '\t':
-		case '\n':
-			return (1);
-		default:
-			return (0);
-	}
-}
+#include "stdio.h"
 
 /**
  * cap_string - function that capitalises char after a separator
@@ -39,30 +10,31 @@ int checks(char sep)
 
 char *cap_string(char *str)
 {
-	int i;
+	int i, j, k;
 	int diff;
+	char chars[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\n', '\t', ' ', '\0'};
 
-	i = 0;
+	i = j = 0;
 	diff = 'b' - 'B';
-	while (*(str + i))
+
+	while (str[i])
 	{
-		if (*(str + i) <= 'z' && *(str + i) >= 'a')
+		j = 0;
+		while (chars[j])
 		{
-			if (checks(*(str + i - 1)) || *(str + i) == *str)
+			if (str[i] == chars[j])
 			{
-				*(str + i) -= diff;
+				k = i + 1;
+				if (str[k] <= 'z' && str[k] >= 'a')
+				{
+					i++;
+					str[i] -= diff;
+				}
 			}
-			else
-			{
-				str[i] = str[i];
-			}
-		}
-		else
-		{
-			str[i] = str[i];
+			j++;
 		}
 		i++;
 	}
+
 	return (str);
-	/* Copyright © 2022 baccrie */
 }
