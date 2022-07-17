@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
- * _strcat -  concatenates two strings
- * @dest: A pointer to a char string
- * @src: A pointer to a char string
- * Copyright © 2022 baccrie
+ * _strcat - copy wahala
+ * @dest - destination
+ * @src: source
  * Return: dest
+ * Copyright © 2022 bsccrie
  */
 
 char *_strcat(char *dest, char *src)
 {
 	int i, j;
 
+	i = 0;
 	j = 0;
-	for (i = 0; dest[i]; i++)
+	while (dest[i])
 	{
-
+		i++;
 	}
-	/* variable i now at the last + 1 element of dest */
 	while (src[j])
 	{
 		dest[i] = src[j];
@@ -25,6 +25,6 @@ char *_strcat(char *dest, char *src)
 		j++;
 	}
 	dest[i] = '\0';
+
 	return (dest);
-	/* Copyright © 2022 baccrie */
 }
