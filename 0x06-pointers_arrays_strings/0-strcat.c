@@ -2,9 +2,9 @@
 
 /**
  * _strcat - copy wahala
- * @dest - destination
+ * @dest: destination
  * @src: source
- * Return: dest
+ * Return - dest
  * Copyright © 2022 bsccrie
  */
 
