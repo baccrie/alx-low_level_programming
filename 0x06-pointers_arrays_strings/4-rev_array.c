@@ -1,4 +1,5 @@
 #include "main.h"
+#include "stdio.h"
 
 /**
  * reverse_array - reverses the content of an array of integers
@@ -10,29 +11,24 @@
 
 void reverse_array(int *a, int n)
 {
-	int *ptr_start, *ptr_end, i, tmp, len;
+	int *p1, *p2, tmp, i, j;
 
-	i = 0;
-	ptr_start = a;
-	ptr_end = a;
-	len = n - 1;
-
-	while (i < len)
+	p1 = p2 = a;
+	i = j = 0;
+	while (i < (n - 1))
 	{
-		ptr_end++;
 		i++;
+		p2++;
 	}
-	i = 0;
-
-	while (i < len / 2)
+	i = n / 2;
+	while (j < i)
 	{
-		tmp = *ptr_start;
-		*ptr_start = *ptr_end;
-		*ptr_end = tmp;
+		tmp = *p1;
+		*p1 = *p2;
+		*p2 = tmp;
 
-		ptr_start++;
-		ptr_end--;
-		i++;
+		j++;
+		p1++;
+		p2--;
 	}
-	/* Copyright baccrie © 2022 */
 }
