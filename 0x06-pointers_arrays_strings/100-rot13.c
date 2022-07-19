@@ -1,4 +1,5 @@
 #include "main.h"
+#include "stdio.h"
 
 /**
  * rot13 - a function that encodes a string the acient Rome way
@@ -12,13 +13,13 @@ char *rot13(char *ch)
 	int i, j;
 	char *input, *output;
 
-	input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	input =  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	i = 0;
-	while (*(ch + i))
+	i = j = 0;
+	while (ch[i])
 	{
 		j = 0;
-		while (*(input + j))
+		while (input[j])
 		{
 			if (ch[i] == input[j])
 			{
@@ -29,6 +30,6 @@ char *rot13(char *ch)
 		}
 		i++;
 	}
+
 	return (ch);
-	/*.Copyright © 2022 baccrie */
 }
