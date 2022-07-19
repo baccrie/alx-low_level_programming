@@ -4,7 +4,7 @@
 /**
  * Separator - checks for separator
  * @ch: character to check
- * Returns: 0 or 1
+ * Return: 0 or 1
  * Copyright © 2022 baccrie
  */
 
