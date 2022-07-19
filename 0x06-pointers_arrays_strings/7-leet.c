@@ -16,12 +16,12 @@ char *leet(char *enc)
 	num = "1703417034";
 	i = 0;
 
-	while (*(enc + i))
+	while (enc[i])
 	{
 		j = 0;
-		while (*(cha + j))
+		while (cha[j])
 		{
-			if (enc[i] == cha[j])
+			if  (enc[i] == cha[j])
 			{
 				enc[i] = num[j];
 			}
@@ -29,6 +29,6 @@ char *leet(char *enc)
 		}
 		i++;
 	}
+
 	return (enc);
-	/* Copyright © 2022 baccrie */
 }
