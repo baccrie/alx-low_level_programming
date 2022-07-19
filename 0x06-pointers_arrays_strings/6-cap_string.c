@@ -2,6 +2,36 @@
 #include "stdio.h"
 
 /**
+ * Separator - checks for separator
+ * @ch: character to check
+ * Returns: 0 or 1
+ * Copyright © 2022 baccrie
+ */
+
+int Separator(char ch)
+{
+	switch (ch)
+	{
+		case ' ':
+		case '\n':
+		case '\t':
+		case ',':
+		case ';':
+		case '.':
+		case '!':
+		case '?':
+		case '"':
+		case '(':
+		case ')':
+		case '{':
+		case '}':
+			return (1);
+		default:
+			return (0);
+	}
+}
+
+/**
  * cap_string - function that capitalises char after a separator
  * @str: a pointer to the string
  * Return: pointer to string
@@ -10,32 +40,26 @@
 
 char *cap_string(char *str)
 {
-	int i, j, k;
-	int diff;
-	char chars[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\n', '\t', ' ', '\0'};
+	int diff, i, j;
 
-	i = j = 0;
-	diff = 'b' - 'B';
-
-	if (str[0] <= 'z' || str[0] >= 'a')
+	diff = 32;
+	i = 0;
+	if (str[i] <= 'z' && str[i] >= 'a')
 	{
-		str[0] -= diff;
+		str[i] -= diff;
 	}
 	while (str[i])
 	{
 		j = 0;
-		while (chars[j])
+		if (Separator(str[i]))
 		{
-			if (str[i] == chars[j])
+			j = i + 1;
+			if (str[j] <= 'z' && str[j] >= 'a')
 			{
-				k = i + 1;
-				if (str[k] <= 'z' && str[k] >= 'a')
-				{
-					i++;
-					str[i] -= diff;
-				}
+				str[j] -= diff;
+				i++;
 			}
-			j++;
+
 		}
 		i++;
 	}
