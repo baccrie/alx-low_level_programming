@@ -10,10 +10,11 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
+	int i, j;
 
 	i = 0;
-	while (i <= 10000)
+	j = 1000;
+	while (i <= j)
 		if (*s == c)
 		{
 			return (s);
