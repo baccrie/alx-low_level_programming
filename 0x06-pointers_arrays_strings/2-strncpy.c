@@ -40,7 +40,6 @@ char *_strncpy(char *dest, char *src, int n)
 			dest[i] = src[i];
 			i++;
 		}
-
 		k = n - i;
 		j = 0;
 		while (j < k)
@@ -50,6 +49,5 @@ char *_strncpy(char *dest, char *src, int n)
 			j++;
 		}
 	}
-
 	return (dest);
 }
