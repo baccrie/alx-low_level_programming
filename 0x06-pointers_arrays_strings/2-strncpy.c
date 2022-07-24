@@ -1,4 +1,5 @@
 #include "stdio.h"
+#include "main.h"
 
 /**
  * _strncpy
@@ -14,70 +15,41 @@ char *_strncpy(char *dest, char *src, int n)
 	int i, j, k;
 
 	i = j = k = 0;
-	while (dest[j])
-		j++;
-	while (src[i])
+	while (dest[i])
+	{
 		i++;
-	if (n <= i)
+	}
+	while (src[j])
 	{
-		while (k < n)
+		j++;
+	}
+	if (j >= n)
+	{
+		i = 0;
+		while (i < n)
 		{
-			dest[j] = src[k];
-			j++;
-			k++;
+			dest[i] = src[i];
+			i++;
 		}
-		return (dest);
+	}
+	else
+	{
+		i = 0;
+		while (src[i])
+		{
+			dest[i] = src[i];
+			i++;
+		}
+
+		k = n - i;
+		j = 0;
+		while (j < k)
+		{
+			dest[i] = '\0';
+			i++;
+			j++;
+		}
 	}
 
-	while (src[k])
-	{
-		dest[j] = src[k];
-		j++;
-		k++;
-	}
-	int l = 0;
-	int rem = n - i;
-	while (l < rem)
-	{
-		dest[j] = '\0';
-		j++;
-		l++;
-	}
 	return (dest);
-
 }
-
-int main(void)
-{
-    char s1[98];
-    char *ptr;
-    int i;
-
-    for (i = 0; i < 98 - 1; i++)
-    {
-        s1[i] = '*';
-    }
-    s1[i] = '\0';
-    printf("%s\n", s1);
-    ptr = _strncpy(s1, "First, solve the problem. Then, write the code\n", 5);
-    printf("%s\n", s1);
-    printf("%s\n", ptr);
-    ptr = _strncpy(s1, "First, solve the problem. Then, write the code\n", 90);
-    printf("%s", s1);
-    printf("%s", ptr);
-    for (i = 0; i < 98; i++)
-    {
-        if (i % 10)
-        {
-            printf(" ");
-        }
-        if (!(i % 10) && i)
-        {
-            printf("\n");
-        }
-        printf("0x%02x", s1[i]);
-    }
-    printf("\n");
-    return (0);
-}
-
