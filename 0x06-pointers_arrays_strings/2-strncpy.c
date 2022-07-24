@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- * _strncpy
- * @dest - destination
- * @src - source
- * @n - no of byte to copy
+ * _strncpy - machala
+ * @dest: destination pointer
+ * @src: source pointer
+ * @n: no of byte to copy
  * Return: dest
  * Copyright © 2022 baccrie
  */
