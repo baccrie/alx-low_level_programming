@@ -10,13 +10,16 @@
 
 char *_strchr(char *s, char c)
 {
-	while (*s)
-	{
+	int i;
+
+	i = 0;
+	while (i <= 10000)
 		if (*s == c)
 		{
 			return (s);
 		}
 		++s;
+		i++;
 	}
 
 	return (NULL);
