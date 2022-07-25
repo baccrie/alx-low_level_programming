@@ -1,3 +1,5 @@
+#include "stdio.h"
+#include "string.h"
 #include "main.h"
 
 /**
@@ -12,7 +14,7 @@ void print_chessboard(char (*a)[8])
 	i = 0;
 	while (i < 8)
 	{
-		j = 0;
+		j = sizeof((*a)[i]) / sizeof(char);
 		while (j < 8)
 		{
 			_putchar (a[i][j]);
