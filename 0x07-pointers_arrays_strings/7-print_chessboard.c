@@ -9,19 +9,20 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	int i, j;
+	int i, j, k;
 
 	i = 0;
+	k = 0;
 	while (i < 8)
 	{
-		j = sizeof((*a)[i]) / sizeof(char);
-		while (j < 8)
+		k = 0;
+		j = sizeof(a);
+		while (k < j)
 		{
-			_putchar (a[i][j]);
-			j++;
+			_putchar (a[i][k]);
+			k++;
 		}
 		_putchar ('\n');
 		i++;
 	}
-
 }
