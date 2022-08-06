@@ -32,7 +32,8 @@ int len(char *ptr)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
-	int i, j, length;
+	int i, j;
+	unsigned int length;
 
 	length = n;
 	i = j = 0;
@@ -40,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		length = len(s2);
 	}
-	if (s1 == NULL)	
+	if (s1 == NULL)
 	{
 		s1 = "";
 	}
