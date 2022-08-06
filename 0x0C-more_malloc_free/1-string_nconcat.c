@@ -3,26 +3,6 @@
 #include "main.h"
 
 /**
- * length - count the length of a string
- * @str: string to count
- * Return: length of str
- */
-
-int length(char *str)
-{
-	unsigned int i;
-
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-
-	return (i);
-}
-
-
-/**
  * string_nconcat - later
  * @s1: first strimg
  * @s2: second string
@@ -33,32 +13,35 @@ int length(char *str)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
-	unsigned int i, j, sum;
-	unsigned int a, b;
+	int i, j, len;
 
+	len = n;
 	i = j = 0;
-	a = length(s1);
-	b = length(s2);
-	if (s1 == NULL)
+	if (n >= strlen(s2))
+	{
+		len = strlen(s2);
+	}
+	if (s1 == NULL)	
+	{
 		s1 = "";
+	}
 	if (s2 == NULL)
+	{
 		s2 = "";
-	if (n >= b)
-		n = b;
-	sum = a + n + 1;
-	ptr = (char *) malloc(sizeof(char) * sum);
+	}
+	ptr = malloc(strlen(s1) + strlen(s2) + 1);
 	if (ptr == NULL)
 		return (NULL);
-        while (i < a)
+	while (s1[i])
 	{
 		ptr[i] = s1[i];
 		i++;
 	}
-	while (j < n)
+	while (j < len)
 	{
 		ptr[i] = s2[j];
-		i++;
 		j++;
+		i++;
 	}
 	ptr[i] = '\0';
 	return (ptr);
