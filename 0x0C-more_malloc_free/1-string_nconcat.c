@@ -3,6 +3,25 @@
 #include "main.h"
 
 /**
+ * len: Returns the length of a string
+ * @ptr - pointer to string
+ * Return: length
+ */
+
+int len(char *ptr)
+{
+	unsigned int i;
+
+	i = 0;
+	while (ptr[i])
+	{
+		i++;
+	}
+
+	return (i);
+}
+
+/**
  * string_nconcat - later
  * @s1: first strimg
  * @s2: second string
@@ -13,13 +32,13 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
-	int i, j, len;
+	int i, j, length;
 
-	len = n;
+	length = n;
 	i = j = 0;
-	if (n >= strlen(s2))
+	if (n >= len(s2))
 	{
-		len = strlen(s2);
+		length = len(s2);
 	}
 	if (s1 == NULL)	
 	{
@@ -29,7 +48,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	ptr = malloc(strlen(s1) + strlen(s2) + 1);
+	ptr = malloc(len(s1) + len(s2) + 1);
 	if (ptr == NULL)
 		return (NULL);
 	while (s1[i])
@@ -37,7 +56,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ptr[i] = s1[i];
 		i++;
 	}
-	while (j < len)
+	while (j < length)
 	{
 		ptr[i] = s2[j];
 		j++;
