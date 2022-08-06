@@ -4,7 +4,7 @@
 
 /**
  * len: Returns the length of a string
- * @ptr - pointer to string
+ * @ptr: pointer to string
  * Return: length
  */
 
