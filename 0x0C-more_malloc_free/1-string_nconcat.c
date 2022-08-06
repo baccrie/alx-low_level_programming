@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * len: Returns the length of a string
+ * len - Returns the length of a string
  * @ptr: pointer to string
  * Return: length
  */
@@ -33,7 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
 	unsigned int i, j;
-	unsigned int length;
+	unsigned int length, si1, si2, total;
 
 	length = n;
 	i = j = 0;
@@ -49,7 +49,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	ptr = malloc(len(s1) + len(s2) + 1);
+	si1 = len(s1);
+	si2 = len(s2);
+	total = si1 + si2 + 1;
+	ptr = malloc(total);
 	if (ptr == NULL)
 		return (NULL);
 	while (s1[i])
