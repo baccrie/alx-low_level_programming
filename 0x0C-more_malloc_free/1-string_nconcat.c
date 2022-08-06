@@ -8,7 +8,7 @@
  * Return: length
  */
 
-int len(char *ptr)
+unsigned int len(char *ptr)
 {
 	unsigned int i;
 
