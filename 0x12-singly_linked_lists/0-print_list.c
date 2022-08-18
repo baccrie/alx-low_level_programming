@@ -1,27 +1,66 @@
 #include "stdio.h"
 #include "lists.h"
+
 /**
- * print_list - prints the data of each node
- * @h: pointer to list head
- * Return: no of nodes in list
+ * print_list - Prints str from lists and returns number of nodes
+ * @h: head node
+ * Return - Number of nodes
+ * Copyright © 2022 baccrie
  */
 
 size_t print_list(const list_t *h)
 {
-	size_t size;
-	const list_t *tmp;
+	size_t number;
+	list_t *ptr;
 
-	size = 0;
-	tmp = h;
-	while (tmp != NULL)
+	ptr = h;
+	number = 0;
+	while(ptr != NULL)
 	{
-		if (tmp->str == NULL)
-			printf("[0] (nil)");
+		if (ptr->str != NULL)
+		{
+			printf("[%d] %s\n", ptr->len, ptr->str);
+		}
 		else
-			printf("[%d] %s", tmp->len, tmp->str);
-		putchar('\n');
-		size++;
-		tmp = tmp->next;
+		{
+			printf("[0] [nil]\n");
+		}
+
+		ptr = ptr->next;
+		number++;
 	}
-	return (size);
+
+	return (number);
+}
+
+
+int main(void)
+{
+    list_t *head;
+    list_t *new;
+    list_t hello = {"World", 5, NULL};
+    size_t n;
+
+    head = &hello;
+    new = malloc(sizeof(list_t));
+    if (new == NULL)
+    {
+        printf("Error\n");
+        return (1);
+    }
+    new->str = strdup("Hello");
+    new->len = 5;
+    new->next = head;
+    head = new;
+    n = print_list(head);
+    printf("-> %lu elements\n", n);
+
+    printf("\n");
+    free(new->str);
+    new->str = NULL;
+    n = print_list(head);
+    printf("-> %lu elements\n", n);
+
+    free(new);
+    return (0);
 }
