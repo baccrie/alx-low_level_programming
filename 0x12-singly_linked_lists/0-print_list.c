@@ -4,7 +4,7 @@
 /**
  * print_list - Prints str from lists and returns number of nodes
  * @h: head node
- * Return - Number of nodes
+ * Return: Number of nodes
  * Copyright © 2022 baccrie
  */
 
@@ -23,12 +23,10 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[0] [nil]\n");
+			printf("[0] (nil)\n");
 		}
-
 		ptr = ptr->next;
 		number++;
 	}
-
 	return (number);
 }
