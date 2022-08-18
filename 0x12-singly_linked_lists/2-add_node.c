@@ -6,7 +6,7 @@
  * add_node - adds nodes to begenning of list
  * @str: pointer to str
  * @head: double pointer to head
- * Returns: head
+ * Return: head
  * Copyright © 2022 baccrie
  */
 
