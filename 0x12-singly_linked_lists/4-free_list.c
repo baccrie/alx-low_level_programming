@@ -6,7 +6,7 @@
  * free_list - frees list
  * @head: head node
  * Return: head node
- *
+ */
 
 void free_list(list_t *head)
 {
@@ -21,12 +21,10 @@ void free_list(list_t *head)
 		head = tmp;
 	}
 }
-*/
 /**
  * free_list -  free a list
  * @head: pointer
  * Return: void
- */
 
 void free_list(list_t *head)
 {
@@ -45,4 +43,4 @@ void free_list(list_t *head)
 
 	free(head->str);
 	free(head);
-}
+}*/
