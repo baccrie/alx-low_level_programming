@@ -2,7 +2,7 @@
 #include "stdlib.h"
 #include "lists.h"
 /**
- * free_listint - function that adds node to end of list
+ * free_listint - function that adds node to end li
  * @head: pointer to head node of list
  * Return: pointer or null
  * Copyright © 2022 baccrie
