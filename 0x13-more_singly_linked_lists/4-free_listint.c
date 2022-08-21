@@ -1,7 +1,6 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "lists.h"
-
 /**
  * free_listint - function that adds node to end of list
  * @head: pointer to head node of list
@@ -10,17 +9,17 @@
  */
 void free_listint(listint_t *head)
 {
-	listint_t *temp;
+	listint_t *tmp;
 
+	tmp = head;
 	if (head == NULL)
 		return;
 
 	while (head->next != NULL)
 	{
-		temp = head->next;
-		free(&head->n);
-		head = temp;
+		tmp = tmp->next;
+		free(head);
+		head = tmp;
 	}
-
-	free(head);
+	free (head);
 }
