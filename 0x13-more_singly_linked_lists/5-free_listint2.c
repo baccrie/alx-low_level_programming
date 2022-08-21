@@ -9,4 +9,22 @@
  * Copyright © 2022 baccrie
  */
 
+void free_listint2(listint_t **head)
+{
+	listint_t *tmp;
 
+	tmp = *head;
+	if ((*head) == NULL)
+	{
+		return;
+	}
+	while (*head->next == NULL)
+	{
+		tmp = tmp->next;
+		free(*head);
+		*head = tmp;
+	}
+
+	free (*head);
+	*head = NULL;
+}
