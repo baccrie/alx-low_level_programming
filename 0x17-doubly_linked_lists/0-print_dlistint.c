@@ -8,13 +8,14 @@
  * Return: the number of nodes
  */
 size_t print_dlistint(const dlistint_t *h) {
-	dlistint_t *ptr;
+	const dlistint_t *ptr;
 	size_t nodes;
 
 	ptr = h;
 	nodes = 0;
 	while (ptr != NULL) {
 		nodes += 1;
+		printf("%d\n", ptr->n);
 		ptr = ptr->next;
 	}
 
