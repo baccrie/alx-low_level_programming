@@ -6,6 +6,7 @@
  *
  * @h: head of the list
  * Return: the number of nodes
+ * copyright baccrie © 2022
  */
 size_t print_dlistint(const dlistint_t *h)
 {
