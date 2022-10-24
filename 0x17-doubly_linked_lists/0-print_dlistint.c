@@ -7,18 +7,24 @@
  * @h: head of the list
  * Return: the number of nodes
  */
-size_t print_dlistint(const dlistint_t *h) {
-	int nodes;
+size_t print_dlistint(const dlistint_t *h)
+{
+	int count;
 
-	nodes = 0;
-	if (h == NULL) {
-		return (nodes);
-	}
-	while (h != NULL) {
-		nodes += 1;
+	count = 0;
+
+	if (h == NULL)
+		return (count);
+
+	while (h->prev != NULL)
+		h = h->prev;
+
+	while (h != NULL)
+	{
 		printf("%d\n", h->n);
+		count++;
 		h = h->next;
 	}
 
-	return (nodes);
+	return (count);
 }
