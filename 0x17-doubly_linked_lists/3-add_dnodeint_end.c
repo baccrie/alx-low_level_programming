@@ -12,6 +12,7 @@
  * @n: value of the element
  * Return: the address of the new element
  */
+
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n) {
 	dlistint_t *new, *tmp;
 
@@ -28,11 +29,9 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n) {
 		(*head) = new;
 		return (*head);
 	}
-
 	while (tmp->next != NULL) {
 		tmp = tmp->next;
 	}
-
 	tmp->next = new;
 	new->prev = tmp;
 	return (*head);
